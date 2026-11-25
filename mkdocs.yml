@@ -1,0 +1,82 @@
+# Plantilla común de dosieres FP (Dustin Randel de Lara García, Sant Josep Obrer)
+# Cambia solo el bloque «DATOS DEL MÓDULO». El resto es igual en todos los módulos.
+
+# ---- DATOS DEL MÓDULO ----
+site_name: Lenguajes de marcas y sistemas de gestión de información
+site_description: Apuntes del módulo 0373, 1.º DAW, DAM y ASIR
+site_author: Dustin Randel de Lara García
+site_url: https://dustinrandel.github.io/lenguajes-de-marcas/
+repo_url: https://github.com/DustinRandel/lenguajes-de-marcas
+edit_uri: ""   # sin botón «editar»: el alumnado no necesita ver el .md
+copyright: Dustin Randel de Lara García, Sant Josep Obrer. Material docente del módulo 0373.
+# ---------------------------
+
+theme:
+  name: material
+  custom_dir: overrides   # añade los favicons de 48 px y .ico
+  language: es
+  logo: assets/logo.png       # icono de Dustin (compás blanco con Ø), fondo transparente
+  favicon: assets/favicon.png # 32 px
+  font:
+    text: Carlito        # equivalente libre de Calibri (cuerpo de las diapositivas)
+    code: Roboto Mono
+  icon:
+    repo: fontawesome/brands/github
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Cambiar a modo oscuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Cambiar a modo claro
+  features:
+    - navigation.top
+    - navigation.footer
+    - navigation.indexes
+    - toc.follow
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+
+markdown_extensions:
+  - meta
+  - tables
+  - admonition
+  - attr_list
+  - md_in_html
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      permalink: true
+      toc_depth: 3
+
+plugins:
+  - search:
+      lang: es
+  - awesome-pages:
+      collapse_single_pages: true
+
+extra_css:
+  - stylesheets/extra.css
+
+# Quita las notas para el profesor (comentarios HTML) de la web publicada.
+# OJO: en un repo público siguen visibles en el .md. Nunca soluciones ahí.
+hooks:
+  - hooks/notas_profesor.py
