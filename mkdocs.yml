@@ -6,6 +6,7 @@ site_name: Lenguajes de marcas y sistemas de gestión de información
 site_description: Apuntes del módulo 0373, 1.º DAW, DAM y ASIR
 site_author: Dustin Randel de Lara García
 site_url: https://dustinrandel.github.io/lenguajes-de-marcas/
+use_directory_urls: false
 repo_url: https://github.com/DustinRandel/lenguajes-de-marcas
 edit_uri: ""   # sin botón «editar»: el alumnado no necesita ver el .md
 copyright: Dustin Randel de Lara García, Sant Josep Obrer. Material docente del módulo 0373.
