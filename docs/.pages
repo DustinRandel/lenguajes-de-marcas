@@ -4,6 +4,7 @@ nav:
     - UT2. El documento HTML: UT2-dosier.md
     - UT3. Hojas de estilo CSS: UT3-dosier.md
     - UT4. Layout responsive: UT4-dosier.md
+    - UT5. JavaScript en el navegador: UT5-dosier.md
 
 # Cómo funciona este fichero:
 #   - Define el menú lateral. Si una página .md no aparece aquí, NO se ve en el menú.
