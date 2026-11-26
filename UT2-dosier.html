@@ -1,0 +1,1595 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Apuntes del módulo 0373, 1.º DAW, DAM y ASIR">
+      
+      
+        <meta name="author" content="Dustin Randel de Lara García">
+      
+      
+        <link rel="canonical" href="https://dustinrandel.github.io/lenguajes-de-marcas/UT2-dosier.html">
+      
+      
+        <link rel="prev" href="UT1-dosier.html">
+      
+      
+        <link rel="next" href="UT3-dosier.html">
+      
+      
+        
+      
+      
+      <link rel="icon" href="assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.2">
+    
+    
+      
+        <title>El documento HTML - Lenguajes de marcas y sistemas de gestión de información</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Carlito:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Carlito";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="stylesheets/extra.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48.png">
+  <link rel="icon" sizes="any" href="assets/favicon.ico">
+  <link rel="apple-touch-icon" href="assets/logo.png">
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ut2-el-documento-html" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="index.html" title="Lenguajes de marcas y sistemas de gestión de información" class="md-header__button md-logo" aria-label="Lenguajes de marcas y sistemas de gestión de información" data-md-component="logo">
+      
+  <img src="assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Lenguajes de marcas y sistemas de gestión de información
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              El documento HTML
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Cambiar a modo oscuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo oscuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Cambiar a modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/DustinRandel/lenguajes-de-marcas" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="Lenguajes de marcas y sistemas de gestión de información" class="md-nav__button md-logo" aria-label="Lenguajes de marcas y sistemas de gestión de información" data-md-component="logo">
+      
+  <img src="assets/logo.png" alt="logo">
+
+    </a>
+    Lenguajes de marcas y sistemas de gestión de información
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/DustinRandel/lenguajes-de-marcas" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="UT1-dosier.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UT1. Introducción a Lenguajes de Marcas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UT2. El documento HTML
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="UT2-dosier.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UT2. El documento HTML
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#como-usar-este-dosier" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cómo usar este dosier
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cómo usar este dosier">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#que-vas-a-aprender" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Qué vas a aprender
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#indice" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Índice
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bloque-1-el-documento-html5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bloque 1. El documento HTML5
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bloque 1. El documento HTML5">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-el-navegador-pide-un-archivo-no-magia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 El navegador pide un archivo, no magia
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-el-esqueleto-no-se-improvisa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2 El esqueleto no se improvisa
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bloque-2-etiquetas-atributos-y-anidacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bloque 2. Etiquetas, atributos y anidación
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bloque 2. Etiquetas, atributos y anidación">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-anatomia-de-un-elemento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 Anatomía de un elemento
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-anidar-con-orden" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 Anidar con orden
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bloque-3-texto-listas-y-divisiones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bloque 3. Texto, listas y divisiones
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bloque 3. Texto, listas y divisiones">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-titulos-y-parrafos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 Títulos y párrafos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-listas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Listas
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bloque-4-enlaces-e-imagenes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bloque 4. Enlaces e imágenes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bloque 4. Enlaces e imágenes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-el-atributo-href" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 El atributo href
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-img-siempre-con-alt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 img siempre con alt
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bloque-5-tablas-de-datos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bloque 5. Tablas de datos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bloque 5. Tablas de datos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-solo-para-datos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 Solo para datos
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anexo-a-glosario" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Anexo A. Glosario
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anexo-b-mapa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Anexo B. Mapa
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anexo-c-autoevaluacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Anexo C. Autoevaluación
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Anexo C. Autoevaluación">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#preguntas-cortas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Preguntas cortas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tipo-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tipo test
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#razona" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Razona
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="UT3-dosier.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UT3. Hojas de estilo CSS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="UT4-dosier.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UT4. Layout responsive
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="UT5-dosier.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UT5. JavaScript en el navegador
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="UT6-dosier.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UT6. XML y JSON
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#como-usar-este-dosier" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cómo usar este dosier
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cómo usar este dosier">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#que-vas-a-aprender" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Qué vas a aprender
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#indice" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Índice
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bloque-1-el-documento-html5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bloque 1. El documento HTML5
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bloque 1. El documento HTML5">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-el-navegador-pide-un-archivo-no-magia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 El navegador pide un archivo, no magia
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-el-esqueleto-no-se-improvisa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2 El esqueleto no se improvisa
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bloque-2-etiquetas-atributos-y-anidacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bloque 2. Etiquetas, atributos y anidación
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bloque 2. Etiquetas, atributos y anidación">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-anatomia-de-un-elemento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 Anatomía de un elemento
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-anidar-con-orden" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 Anidar con orden
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bloque-3-texto-listas-y-divisiones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bloque 3. Texto, listas y divisiones
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bloque 3. Texto, listas y divisiones">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-titulos-y-parrafos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 Títulos y párrafos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-listas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Listas
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bloque-4-enlaces-e-imagenes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bloque 4. Enlaces e imágenes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bloque 4. Enlaces e imágenes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-el-atributo-href" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 El atributo href
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-img-siempre-con-alt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 img siempre con alt
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bloque-5-tablas-de-datos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bloque 5. Tablas de datos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bloque 5. Tablas de datos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-solo-para-datos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 Solo para datos
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anexo-a-glosario" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Anexo A. Glosario
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anexo-b-mapa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Anexo B. Mapa
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anexo-c-autoevaluacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Anexo C. Autoevaluación
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Anexo C. Autoevaluación">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#preguntas-cortas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Preguntas cortas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tipo-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tipo test
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#razona" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Razona
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="ut2-el-documento-html">UT2. El documento HTML<a class="headerlink" href="#ut2-el-documento-html" title="Permanent link">&para;</a></h1>
+<h2 class="nobreak" id="como-usar-este-dosier">Cómo usar este dosier<a class="headerlink" href="#como-usar-este-dosier" title="Permanent link">&para;</a></h2>
+<p>En la UT1 escribiste el primer <code>index.html</code> y lo abriste. Aquí entra el documento de verdad: qué va en el <code>head</code>, cómo se anidan las etiquetas, listas, enlaces, imágenes y tablas de datos.</p>
+<p>Copia los ejemplos, rómpelos a propósito y mira qué hace el navegador. F12, pestaña Elementos, es tu sitio de trabajo.</p>
+<h3 id="que-vas-a-aprender">Qué vas a aprender<a class="headerlink" href="#que-vas-a-aprender" title="Permanent link">&para;</a></h3>
+<p>Al terminar esta unidad deberías ser capaz de:</p>
+<ul>
+<li><strong>Escribir</strong> un documento HTML5 con DOCTYPE, <code>html</code>, <code>head</code> y <code>body</code>.</li>
+<li><strong>Anidar</strong> etiquetas con criterio y poner atributos entre comillas.</li>
+<li><strong>Marcar</strong> títulos, párrafos, listas, enlaces e imágenes.</li>
+<li><strong>Crear</strong> una tabla de datos con <code>table</code>, <code>tr</code>, <code>th</code> y <code>td</code>.</li>
+<li><strong>Explicar</strong> qué va en el <code>head</code> (charset, title) y qué se ve en el <code>body</code>.</li>
+</ul>
+<h3 id="indice">Índice<a class="headerlink" href="#indice" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Bloque</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#bloque-1-el-documento-html5">1</a></td>
+<td>El documento HTML5</td>
+</tr>
+<tr>
+<td><a href="#bloque-2-etiquetas-atributos-y-anidacion">2</a></td>
+<td>Etiquetas, atributos y anidación</td>
+</tr>
+<tr>
+<td><a href="#bloque-3-texto-listas-y-divisiones">3</a></td>
+<td>Texto, listas y divisiones</td>
+</tr>
+<tr>
+<td><a href="#bloque-4-enlaces-e-imagenes">4</a></td>
+<td>Enlaces e imágenes</td>
+</tr>
+<tr>
+<td><a href="#bloque-5-tablas-de-datos">5</a></td>
+<td>Tablas de datos</td>
+</tr>
+<tr>
+<td>A</td>
+<td>Glosario</td>
+</tr>
+<tr>
+<td>B</td>
+<td>Mapa</td>
+</tr>
+<tr>
+<td>C</td>
+<td>Autoevaluación</td>
+</tr>
+</tbody>
+</table>
+<h2 id="bloque-1-el-documento-html5">Bloque 1. El documento HTML5<a class="headerlink" href="#bloque-1-el-documento-html5" title="Permanent link">&para;</a></h2>
+<h3 id="11-el-navegador-pide-un-archivo-no-magia">1.1 El navegador pide un archivo, no magia<a class="headerlink" href="#11-el-navegador-pide-un-archivo-no-magia" title="Permanent link">&para;</a></h3>
+<p>Cuando escribes una dirección, tu navegador (el cliente) pide al servidor unos archivos: HTML, CSS, imágenes. El HTML es texto plano. El navegador lo interpreta y pinta la página. Clic derecho, «Ver código fuente», enseña exactamente eso.</p>
+<div class="admonition definicion">
+<p class="admonition-title">HTML</p>
+<p>Lenguaje de marcas para crear páginas web. Define la estructura y el contenido. El aspecto lo pone CSS y el comportamiento, JavaScript. La versión actual es HTML5.</p>
+</div>
+<h3 id="12-el-esqueleto-no-se-improvisa">1.2 El esqueleto no se improvisa<a class="headerlink" href="#12-el-esqueleto-no-se-improvisa" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">"es"</span><span class="p">&gt;</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">"UTF-8"</span><span class="p">&gt;</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Videoclub La Palma<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Cartelera<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Pieza</th>
+<th>Para qué</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&lt;!DOCTYPE html&gt;</code></td>
+<td>Dice al navegador: esto es HTML5</td>
+</tr>
+<tr>
+<td><code>&lt;html lang="es"&gt;</code></td>
+<td>Raíz del documento. <code>lang</code> ayuda al lector de pantalla y al corrector</td>
+</tr>
+<tr>
+<td><code>&lt;head&gt;</code></td>
+<td>Datos para el navegador: no se ven en la página</td>
+</tr>
+<tr>
+<td><code>&lt;meta charset="UTF-8"&gt;</code></td>
+<td>Tildes y eñes bien. Sin esto, «año» puede salir raro</td>
+</tr>
+<tr>
+<td><code>&lt;title&gt;</code></td>
+<td>Texto de la pestaña</td>
+</tr>
+<tr>
+<td><code>&lt;body&gt;</code></td>
+<td>Lo que se ve</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition ojo">
+<p class="admonition-title">Ojo</p>
+<p>El <code>title</code> no es el <code>h1</code>. El título de la pestaña va en el <code>head</code>. El título visible, en el <code>body</code>.</p>
+</div>
+<div class="admonition comprueba">
+<p class="admonition-title">Comprueba</p>
+<ol>
+<li>¿Qué pasa si omites el charset y escribes «Mallorca»?</li>
+<li>¿Dónde aparece el texto de <code>&lt;title&gt;</code>?</li>
+<li>¿El <code>DOCTYPE</code> se cierra?</li>
+</ol>
+</div>
+<h2 id="bloque-2-etiquetas-atributos-y-anidacion">Bloque 2. Etiquetas, atributos y anidación<a class="headerlink" href="#bloque-2-etiquetas-atributos-y-anidacion" title="Permanent link">&para;</a></h2>
+<h3 id="21-anatomia-de-un-elemento">2.1 Anatomía de un elemento<a class="headerlink" href="#21-anatomia-de-un-elemento" title="Permanent link">&para;</a></h3>
+<p>Un elemento con contenido tiene apertura, contenido y cierre:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Un párrafo con <span class="p">&lt;</span><span class="nt">strong</span><span class="p">&gt;</span>énfasis<span class="p">&lt;/</span><span class="nt">strong</span><span class="p">&gt;</span>.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>Algunos no tienen contenido y no se cierran: <code>&lt;img&gt;</code>, <code>&lt;br&gt;</code>, <code>&lt;hr&gt;</code>, <code>&lt;meta&gt;</code>.</p>
+<div class="admonition definicion">
+<p class="admonition-title">Elemento HTML</p>
+<p>Unidad del documento: una etiqueta de apertura (con o sin atributos), un contenido opcional y, si lo hay, una etiqueta de cierre. El navegador no enseña las marcas: enseña el resultado.</p>
+</div>
+<p>Los atributos van en la apertura, con el valor entre comillas:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"cartel.jpg"</span> <span class="na">alt</span><span class="o">=</span><span class="s">"Cartel de Dune"</span><span class="p">&gt;</span>
+</code></pre></div>
+<p><code>id</code> es único en la página. <code>class</code> se puede repetir. <code>title</code> (el atributo) es el texto al pasar el ratón, no el de la pestaña.</p>
+<h3 id="22-anidar-con-orden">2.2 Anidar con orden<a class="headerlink" href="#22-anidar-con-orden" title="Permanent link">&para;</a></h3>
+<p>Se abre por fuera y se cierra por dentro, como cajas:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Correcto: <span class="p">&lt;</span><span class="nt">em</span><span class="p">&gt;</span>énfasis<span class="p">&lt;/</span><span class="nt">em</span><span class="p">&gt;</span>.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>Esto está mal: <code>&lt;p&gt;&lt;em&gt;énfasis&lt;/p&gt;&lt;/em&gt;</code>. El navegador a veces «arregla» el HTML roto y el resultado te despista. En XML no te lo perdona.</p>
+<p>HTML no distingue mayúsculas, pero se escribe en minúsculas. Los espacios de más en el fuente no se ven en la página: para un salto visible usas <code>&lt;br&gt;</code> o, mejor, otro párrafo.</p>
+<div class="admonition predice">
+<p class="admonition-title">Predice</p>
+<p><code>&lt;p&gt;Hola     mundo&lt;/p&gt;</code> con cinco espacios. ¿Se ven los cinco en el navegador?</p>
+</div>
+<div class="admonition comprueba">
+<p class="admonition-title">Comprueba</p>
+<ol>
+<li>Cita dos etiquetas que no se cierran.</li>
+<li>¿El valor de un atributo va con comillas o sin ellas?</li>
+<li>¿Puedes poner un <code>&lt;p&gt;</code> dentro de otro <code>&lt;p&gt;</code>?</li>
+</ol>
+</div>
+<h2 id="bloque-3-texto-listas-y-divisiones">Bloque 3. Texto, listas y divisiones<a class="headerlink" href="#bloque-3-texto-listas-y-divisiones" title="Permanent link">&para;</a></h2>
+<h3 id="31-titulos-y-parrafos">3.1 Títulos y párrafos<a class="headerlink" href="#31-titulos-y-parrafos" title="Permanent link">&para;</a></h3>
+<p><code>h1</code> a <code>h6</code> son títulos, no tamaños de letra. Un <code>h1</code> por página, como regla de trabajo. El párrafo es <code>&lt;p&gt;</code>. Un salto de línea suelto en el fuente no pinta un renglón nuevo.</p>
+<p><code>&lt;div&gt;</code> agrupa. No significa nada por sí solo: sirve para maquetar cuando no hay una etiqueta con sentido (eso lo aprovecha CSS). Si es un menú, usa <code>&lt;nav&gt;</code>; si es el contenido principal, <code>&lt;main&gt;</code>.</p>
+<h3 id="32-listas">3.2 Listas<a class="headerlink" href="#32-listas" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Dune<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>El padrino<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="p">&lt;</span><span class="nt">ol</span><span class="p">&gt;</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Alquilar<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Devolver<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="p">&lt;/</span><span class="nt">ol</span><span class="p">&gt;</span>
+</code></pre></div>
+<p><code>ul</code> no ordena. <code>ol</code> numera. El ítem siempre es <code>li</code>. Se pueden anidar listas dentro de un <code>li</code>.</p>
+<div class="admonition comprueba">
+<p class="admonition-title">Comprueba</p>
+<ol>
+<li>¿Qué etiqueta usarías para el menú de la web?</li>
+<li>¿<code>h1</code> es un tamaño de fuente?</li>
+<li>¿Puede un <code>li</code> contener otro <code>ul</code>?</li>
+</ol>
+</div>
+<h2 id="bloque-4-enlaces-e-imagenes">Bloque 4. Enlaces e imágenes<a class="headerlink" href="#bloque-4-enlaces-e-imagenes" title="Permanent link">&para;</a></h2>
+<h3 id="41-el-atributo-href">4.1 El atributo href<a class="headerlink" href="#41-el-atributo-href" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"https://www.santjosepobrer.es"</span><span class="p">&gt;</span>El colegio<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"cartelera.html"</span><span class="p">&gt;</span>Cartelera<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"#pie"</span><span class="p">&gt;</span>Ir al pie<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+</code></pre></div>
+<ul>
+<li>Una URL absoluta empieza por <code>https://</code>.</li>
+<li>Una relativa, por el nombre de un archivo o una carpeta (lo mismo que en las rutas de siempre).</li>
+<li>Un ancla <code>#pie</code> salta al elemento con <code>id="pie"</code> de la misma página.</li>
+</ul>
+<h3 id="42-img-siempre-con-alt">4.2 img siempre con alt<a class="headerlink" href="#42-img-siempre-con-alt" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"imagenes/dune.jpg"</span> <span class="na">alt</span><span class="o">=</span><span class="s">"Cartel de Dune, arena y un personaje"</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>Sin <code>alt</code>, si la imagen no carga no hay recado, y el lector de pantalla no sabe qué hay. <code>width</code> y <code>height</code> reservan el hueco; el tamaño visual fino se deja para CSS.</p>
+<div class="admonition ojo">
+<p class="admonition-title">Ojo</p>
+<p><code>alt=""</code> (vacío) es para adornos. <code>alt</code> ausente es un fallo. No pongas «imagen de» en el alt: ya se sabe que es una imagen.</p>
+</div>
+<div class="admonition comprueba">
+<p class="admonition-title">Comprueba</p>
+<ol>
+<li>¿Qué href usarías para saltar al <code>id="contacto"</code> de la misma página?</li>
+<li>¿<code>img</code> tiene etiqueta de cierre?</li>
+<li>¿Para qué sirve <code>alt</code> si la imagen se ve bien?</li>
+</ol>
+</div>
+<h2 id="bloque-5-tablas-de-datos">Bloque 5. Tablas de datos<a class="headerlink" href="#bloque-5-tablas-de-datos" title="Permanent link">&para;</a></h2>
+<h3 id="51-solo-para-datos">5.1 Solo para datos<a class="headerlink" href="#51-solo-para-datos" title="Permanent link">&para;</a></h3>
+<p>Una tabla organiza filas y columnas. La pregunta: ¿tendría sentido en una hoja de cálculo? Si sí, va en una tabla. Si no (maquetar la página entera), no.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="p">&lt;</span><span class="nt">table</span><span class="p">&gt;</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>  <span class="p">&lt;</span><span class="nt">caption</span><span class="p">&gt;</span>Alquileres de la semana<span class="p">&lt;/</span><span class="nt">caption</span><span class="p">&gt;</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>  <span class="p">&lt;</span><span class="nt">thead</span><span class="p">&gt;</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>    <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>      <span class="p">&lt;</span><span class="nt">th</span><span class="p">&gt;</span>Película<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>      <span class="p">&lt;</span><span class="nt">th</span><span class="p">&gt;</span>Días<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>    <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>  <span class="p">&lt;/</span><span class="nt">thead</span><span class="p">&gt;</span>
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>  <span class="p">&lt;</span><span class="nt">tbody</span><span class="p">&gt;</span>
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a>    <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a>      <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>Dune<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+<a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a>      <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>3<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+<a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a>    <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+<a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a>  <span class="p">&lt;/</span><span class="nt">tbody</span><span class="p">&gt;</span>
+<a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a><span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
+</code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Etiqueta</th>
+<th>Papel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>table</code></td>
+<td>La tabla</td>
+</tr>
+<tr>
+<td><code>caption</code></td>
+<td>Título de la tabla</td>
+</tr>
+<tr>
+<td><code>tr</code></td>
+<td>Fila</td>
+</tr>
+<tr>
+<td><code>th</code></td>
+<td>Celda de encabezado</td>
+</tr>
+<tr>
+<td><code>td</code></td>
+<td>Celda de dato</td>
+</tr>
+<tr>
+<td><code>thead</code> / <code>tbody</code></td>
+<td>Agrupan filas de cabecera y de cuerpo</td>
+</tr>
+</tbody>
+</table>
+<p><code>colspan</code> y <code>rowspan</code> unen celdas. No abuses: si la tabla se vuelve un puzzle, revisa los datos.</p>
+<div class="admonition predice">
+<p class="admonition-title">Predice</p>
+<p>Una fila con tres <code>td</code> y la siguiente con dos. ¿El navegador deja un hueco o rompe la tabla?</p>
+</div>
+<div class="admonition comprueba">
+<p class="admonition-title">Comprueba</p>
+<ol>
+<li>¿Usarías una tabla para el menú de la web? ¿Por qué?</li>
+<li>¿Qué diferencia hay entre <code>th</code> y <code>td</code>?</li>
+<li>¿Dónde va <code>caption</code>, dentro o fuera de <code>table</code>?</li>
+</ol>
+</div>
+<h2 id="anexo-a-glosario">Anexo A. Glosario<a class="headerlink" href="#anexo-a-glosario" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Término</th>
+<th>Significado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DOCTYPE</td>
+<td>Primera línea: declara HTML5</td>
+</tr>
+<tr>
+<td>head</td>
+<td>Metadatos: title, charset, enlaces a CSS</td>
+</tr>
+<tr>
+<td>body</td>
+<td>Contenido visible</td>
+</tr>
+<tr>
+<td>Atributo</td>
+<td>Par nombre="valor" en la apertura</td>
+</tr>
+<tr>
+<td>Ancla</td>
+<td>Enlace a un <code>id</code> de la misma página</td>
+</tr>
+<tr>
+<td>alt</td>
+<td>Texto alternativo de una imagen</td>
+</tr>
+<tr>
+<td>th</td>
+<td>Celda de encabezado de tabla</td>
+</tr>
+</tbody>
+</table>
+<h2 id="anexo-b-mapa">Anexo B. Mapa<a class="headerlink" href="#anexo-b-mapa" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>Documento
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>  DOCTYPE, html lang, head (charset, title), body
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>  Etiqueta = apertura + atributos + contenido + cierre (si lo hay)
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>  Texto: h1-h6, p, ul/ol/li, div/nav/main
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>  href (absoluto, relativo, #id) e img src/alt
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>  table &gt; tr &gt; th|td
+</code></pre></div>
+<h2 id="anexo-c-autoevaluacion">Anexo C. Autoevaluación<a class="headerlink" href="#anexo-c-autoevaluacion" title="Permanent link">&para;</a></h2>
+<h3 id="preguntas-cortas">Preguntas cortas<a class="headerlink" href="#preguntas-cortas" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Escribe el esqueleto mínimo de un HTML5.</li>
+<li>¿Por qué el <code>title</code> no va en el <code>body</code>?</li>
+<li>Cita tres etiquetas vacías.</li>
+<li>¿Cuándo una tabla es el marcado correcto?</li>
+</ol>
+<h3 id="tipo-test">Tipo test<a class="headerlink" href="#tipo-test" title="Permanent link">&para;</a></h3>
+<ol>
+<li><code>lang="es"</code> se pone en:<ul>
+<li>a) <code>body</code></li>
+<li>b) <code>html</code></li>
+<li>c) <code>title</code></li>
+<li>d) <code>p</code></li>
+</ul>
+</li>
+<li>Un enlace al pie de la misma página:<ul>
+<li>a) <code>href="pie.html"</code></li>
+<li>b) <code>href="#pie"</code></li>
+<li>c) <code>src="#pie"</code></li>
+<li>d) <code>href="/pie"</code></li>
+</ul>
+</li>
+<li>La celda de encabezado es:<ul>
+<li>a) <code>td</code></li>
+<li>b) <code>tr</code></li>
+<li>c) <code>th</code></li>
+<li>d) <code>head</code></li>
+</ul>
+</li>
+</ol>
+<h3 id="razona">Razona<a class="headerlink" href="#razona" title="Permanent link">&para;</a></h3>
+<p>Sara maqueta toda la portada con una tabla de 3×2 (logo, menú, contenido…). ¿Qué le dices y qué etiquetas le propones en su lugar?</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Pie" >
+        
+          
+          <a href="UT1-dosier.html" class="md-footer__link md-footer__link--prev" aria-label="Anterior: UT1. Introducción a Lenguajes de Marcas">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              <div class="md-ellipsis">
+                UT1. Introducción a Lenguajes de Marcas
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="UT3-dosier.html" class="md-footer__link md-footer__link--next" aria-label="Siguiente: UT3. Hojas de estilo CSS">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Siguiente
+              </span>
+              <div class="md-ellipsis">
+                UT3. Hojas de estilo CSS
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Dustin Randel de Lara García, Sant Josep Obrer. Material docente del módulo 0373.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.top", "navigation.footer", "navigation.indexes", "toc.follow", "search.highlight", "search.suggest", "content.code.copy", "content.code.annotate", "content.tabs.link"], "search": "assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.a5f9d56c.min.js"></script>
+      
+    
+  </body>
+</html>

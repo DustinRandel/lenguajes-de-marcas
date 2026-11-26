@@ -1,0 +1,1742 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Apuntes del módulo 0373, 1.º DAW, DAM y ASIR">
+      
+      
+        <meta name="author" content="Dustin Randel de Lara García">
+      
+      
+        <link rel="canonical" href="https://dustinrandel.github.io/lenguajes-de-marcas/UT4-dosier.html">
+      
+      
+        <link rel="prev" href="UT3-dosier.html">
+      
+      
+        <link rel="next" href="UT5-dosier.html">
+      
+      
+        
+      
+      
+      <link rel="icon" href="assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.2">
+    
+    
+      
+        <title>Layout responsive - Lenguajes de marcas y sistemas de gestión de información</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Carlito:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Carlito";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="stylesheets/extra.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48.png">
+  <link rel="icon" sizes="any" href="assets/favicon.ico">
+  <link rel="apple-touch-icon" href="assets/logo.png">
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ut4-layout-responsive" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="index.html" title="Lenguajes de marcas y sistemas de gestión de información" class="md-header__button md-logo" aria-label="Lenguajes de marcas y sistemas de gestión de información" data-md-component="logo">
+      
+  <img src="assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Lenguajes de marcas y sistemas de gestión de información
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Layout responsive
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Cambiar a modo oscuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo oscuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Cambiar a modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/DustinRandel/lenguajes-de-marcas" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="Lenguajes de marcas y sistemas de gestión de información" class="md-nav__button md-logo" aria-label="Lenguajes de marcas y sistemas de gestión de información" data-md-component="logo">
+      
+  <img src="assets/logo.png" alt="logo">
+
+    </a>
+    Lenguajes de marcas y sistemas de gestión de información
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/DustinRandel/lenguajes-de-marcas" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="UT1-dosier.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UT1. Introducción a Lenguajes de Marcas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="UT2-dosier.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UT2. El documento HTML
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="UT3-dosier.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UT3. Hojas de estilo CSS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UT4. Layout responsive
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="UT4-dosier.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UT4. Layout responsive
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#como-usar-este-dosier" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cómo usar este dosier
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cómo usar este dosier">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#que-vas-a-aprender" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Qué vas a aprender
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#indice" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Índice
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bloque-1-que-es-un-layout-responsive" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bloque 1. Qué es un layout responsive
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bloque 1. Qué es un layout responsive">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-el-layout-es-como-se-colocan-las-cajas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 El layout es cómo se colocan las cajas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-una-sola-pagina-muchos-anchos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2 Una sola página, muchos anchos
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bloque-2-flexbox-el-contenedor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bloque 2. Flexbox: el contenedor
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bloque 2. Flexbox: el contenedor">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-el-padre-es-flex-los-hijos-son-items" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 El padre es flex, los hijos son ítems
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-eje-principal-y-eje-cruzado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 Eje principal y eje cruzado
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bloque-3-flexbox-los-items" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bloque 3. Flexbox: los ítems
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bloque 3. Flexbox: los ítems">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-tres-numeros-que-se-recuerdan-juntos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 Tres números que se recuerdan juntos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-un-calculo-que-sale-en-clase" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Un cálculo que sale en clase
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bloque-4-css-grid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bloque 4. CSS Grid
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bloque 4. CSS Grid">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-filas-y-columnas-a-la-vez" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 Filas y columnas a la vez
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-lineas-y-areas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 Líneas y áreas
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bloque-5-media-queries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bloque 5. Media queries
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bloque 5. Media queries">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-el-css-pregunta-el-ancho" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 El CSS pregunta el ancho
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-desktop-first-y-mobile-first" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 Desktop first y mobile first
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anexo-a-glosario" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Anexo A. Glosario
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anexo-b-mapa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Anexo B. Mapa
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anexo-c-autoevaluacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Anexo C. Autoevaluación
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Anexo C. Autoevaluación">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#preguntas-cortas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Preguntas cortas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tipo-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tipo test
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#razona" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Razona
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="UT5-dosier.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UT5. JavaScript en el navegador
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="UT6-dosier.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UT6. XML y JSON
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#como-usar-este-dosier" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cómo usar este dosier
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cómo usar este dosier">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#que-vas-a-aprender" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Qué vas a aprender
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#indice" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Índice
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bloque-1-que-es-un-layout-responsive" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bloque 1. Qué es un layout responsive
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bloque 1. Qué es un layout responsive">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-el-layout-es-como-se-colocan-las-cajas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 El layout es cómo se colocan las cajas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-una-sola-pagina-muchos-anchos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2 Una sola página, muchos anchos
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bloque-2-flexbox-el-contenedor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bloque 2. Flexbox: el contenedor
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bloque 2. Flexbox: el contenedor">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-el-padre-es-flex-los-hijos-son-items" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 El padre es flex, los hijos son ítems
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-eje-principal-y-eje-cruzado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 Eje principal y eje cruzado
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bloque-3-flexbox-los-items" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bloque 3. Flexbox: los ítems
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bloque 3. Flexbox: los ítems">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-tres-numeros-que-se-recuerdan-juntos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 Tres números que se recuerdan juntos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-un-calculo-que-sale-en-clase" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Un cálculo que sale en clase
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bloque-4-css-grid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bloque 4. CSS Grid
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bloque 4. CSS Grid">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-filas-y-columnas-a-la-vez" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 Filas y columnas a la vez
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-lineas-y-areas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 Líneas y áreas
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bloque-5-media-queries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bloque 5. Media queries
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bloque 5. Media queries">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-el-css-pregunta-el-ancho" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 El CSS pregunta el ancho
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-desktop-first-y-mobile-first" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 Desktop first y mobile first
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anexo-a-glosario" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Anexo A. Glosario
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anexo-b-mapa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Anexo B. Mapa
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anexo-c-autoevaluacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Anexo C. Autoevaluación
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Anexo C. Autoevaluación">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#preguntas-cortas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Preguntas cortas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tipo-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tipo test
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#razona" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Razona
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="ut4-layout-responsive">UT4. Layout responsive<a class="headerlink" href="#ut4-layout-responsive" title="Permanent link">&para;</a></h1>
+<h2 class="nobreak" id="como-usar-este-dosier">Cómo usar este dosier<a class="headerlink" href="#como-usar-este-dosier" title="Permanent link">&para;</a></h2>
+<p>Esta unidad entra cuando ya sabes escribir HTML y CSS. El problema nuevo no es pintar una caja: es que esa caja se vea bien en el móvil, en la tablet y en el portátil <strong>con el mismo HTML</strong>.</p>
+<p>Copia los ejemplos, cambia el ancho de la ventana y mira F12. Flexbox y Grid se entienden mucho mejor viendo cómo se mueven las cajas que leyendo la lista de propiedades.</p>
+<p>A lo largo del texto encontrarás las mismas cajas de siempre:</p>
+<div class="admonition definicion">
+<p class="admonition-title">Definición</p>
+<p>Un término que tienes que saber explicar con tus propias palabras.</p>
+</div>
+<div class="admonition ejemplo">
+<p class="admonition-title">Ejemplo</p>
+<p>Un caso concreto con su código.</p>
+</div>
+<div class="admonition ojo">
+<p class="admonition-title">Ojo</p>
+<p>Un error típico o una confusión frecuente.</p>
+</div>
+<div class="admonition predice">
+<p class="admonition-title">Predice</p>
+<p>Antes de probarlo en el navegador, apunta lo que crees que va a pasar.</p>
+</div>
+<div class="admonition comprueba">
+<p class="admonition-title">Comprueba</p>
+<p>Preguntas cortas al final de cada bloque.</p>
+</div>
+<h3 id="que-vas-a-aprender">Qué vas a aprender<a class="headerlink" href="#que-vas-a-aprender" title="Permanent link">&para;</a></h3>
+<p>Al terminar esta unidad deberías ser capaz de:</p>
+<ul>
+<li><strong>Explicar</strong> qué es un layout responsive y por qué no se hace una página distinta por dispositivo.</li>
+<li><strong>Colocar</strong> elementos en una dimensión con Flexbox (menú, fila de tarjetas, pie).</li>
+<li><strong>Repartir</strong> el espacio sobrante con <code>flex-grow</code>, <code>flex-shrink</code> y <code>flex-basis</code>.</li>
+<li><strong>Maquetar</strong> en dos dimensiones con Grid (cabecera, columnas, áreas con nombre).</li>
+<li><strong>Cambiar</strong> el layout según el ancho con media queries, sin tocar el HTML.</li>
+</ul>
+<h3 id="indice">Índice<a class="headerlink" href="#indice" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Bloque</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#bloque-1-que-es-un-layout-responsive">1</a></td>
+<td>Qué es un layout responsive</td>
+</tr>
+<tr>
+<td><a href="#bloque-2-flexbox-el-contenedor">2</a></td>
+<td>Flexbox: el contenedor</td>
+</tr>
+<tr>
+<td><a href="#bloque-3-flexbox-los-items">3</a></td>
+<td>Flexbox: los ítems</td>
+</tr>
+<tr>
+<td><a href="#bloque-4-css-grid">4</a></td>
+<td>CSS Grid</td>
+</tr>
+<tr>
+<td><a href="#bloque-5-media-queries">5</a></td>
+<td>Media queries</td>
+</tr>
+<tr>
+<td>A</td>
+<td>Glosario</td>
+</tr>
+<tr>
+<td>B</td>
+<td>Mapa</td>
+</tr>
+<tr>
+<td>C</td>
+<td>Autoevaluación</td>
+</tr>
+</tbody>
+</table>
+<h2 id="bloque-1-que-es-un-layout-responsive">Bloque 1. Qué es un layout responsive<a class="headerlink" href="#bloque-1-que-es-un-layout-responsive" title="Permanent link">&para;</a></h2>
+<h3 id="11-el-layout-es-como-se-colocan-las-cajas">1.1 El layout es cómo se colocan las cajas<a class="headerlink" href="#11-el-layout-es-como-se-colocan-las-cajas" title="Permanent link">&para;</a></h3>
+<p>En la UT3 cada elemento era una caja (contenido, relleno, borde, margen) y <code>display</code> decía si ocupaba todo el renglón o se ponía en línea. Eso no basta cuando hay que alinear un menú, centrar un logo y poner tres tarjetas en fila.</p>
+<div class="admonition definicion">
+<p class="admonition-title">Layout</p>
+<p>Manera de colocar y organizar las cajas de una página. No es una propiedad suelta: es el conjunto de reglas (display, flex, grid, floats antiguos) que decide quién va al lado de quién y cómo se reparte el hueco.</p>
+</div>
+<p>Durante años se maquetaba con tablas (<code>&lt;table&gt;</code> para todo) y después con <code>float</code>. Las dos cosas eran un apaño. Hoy el trabajo serio se hace con <strong>Flexbox</strong> (una dimensión: una fila o una columna) y <strong>Grid</strong> (dos dimensiones: filas y columnas a la vez).</p>
+<h3 id="12-una-sola-pagina-muchos-anchos">1.2 Una sola página, muchos anchos<a class="headerlink" href="#12-una-sola-pagina-muchos-anchos" title="Permanent link">&para;</a></h3>
+<p>El móvil, la tablet y el portátil no tienen el mismo ancho. Si escribes un HTML distinto para cada uno, cada cambio se multiplica por tres y se te olvida uno.</p>
+<div class="admonition definicion">
+<p class="admonition-title">Diseño responsive</p>
+<p>Un mismo HTML (y, en lo posible, un mismo CSS) que se reorganiza según el ancho disponible: el menú pasa de horizontal a vertical, las tres columnas se apilan, el texto baja de tamaño. El contenido no se recorta ni obliga a hacer scroll horizontal.</p>
+</div>
+<p>No se trata de «hacer la web más pequeña». Se trata de <strong>reordenar</strong>. El mismo <code>nav</code> puede ser una fila en el portátil y una columna en el móvil.</p>
+<div class="admonition ojo">
+<p class="admonition-title">Ojo</p>
+<p><code>width: 1200px</code> en el contenedor principal rompe el responsive: en un móvil de 360 px aparece una barra horizontal. Empieza por <code>max-width</code> y anchos en <code>%</code> o <code>fr</code>.</p>
+</div>
+<div class="admonition comprueba">
+<p class="admonition-title">Comprueba</p>
+<ol>
+<li>¿Qué problema hay en hacer tres HTML, uno por dispositivo?</li>
+<li>¿Flexbox resuelve una dimensión o dos?</li>
+<li>Si una caja tiene <code>width: 1200px</code>, ¿qué pasa en un móvil de 360 px?</li>
+</ol>
+</div>
+<h2 id="bloque-2-flexbox-el-contenedor">Bloque 2. Flexbox: el contenedor<a class="headerlink" href="#bloque-2-flexbox-el-contenedor" title="Permanent link">&para;</a></h2>
+<h3 id="21-el-padre-es-flex-los-hijos-son-items">2.1 El padre es flex, los hijos son ítems<a class="headerlink" href="#21-el-padre-es-flex-los-hijos-son-items" title="Permanent link">&para;</a></h3>
+<p>Flexbox no es una propiedad: es un <strong>sistema</strong>. Se activa en el padre.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">nav</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">flex</span><span class="p">;</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="p">}</span>
+</code></pre></div>
+<p>A partir de ahí, los hijos directos de <code>nav</code> pasan a ser <strong>ítems flex</strong>. Las propiedades del padre colocan a todos; las de cada hijo retocan a uno.</p>
+<div class="admonition definicion">
+<p class="admonition-title">Contenedor flex</p>
+<p>Elemento con <code>display: flex</code> (o <code>inline-flex</code>). Define el eje principal y cómo se reparte el espacio. Sus hijos directos son los ítems.</p>
+</div>
+<h3 id="22-eje-principal-y-eje-cruzado">2.2 Eje principal y eje cruzado<a class="headerlink" href="#22-eje-principal-y-eje-cruzado" title="Permanent link">&para;</a></h3>
+<p>Por defecto el eje principal va de izquierda a derecha (<code>flex-direction: row</code>). El eje cruzado es el perpendicular (arriba-abajo). Si pones <code>flex-direction: column</code>, se intercambian.</p>
+<table>
+<thead>
+<tr>
+<th>Propiedad</th>
+<th>Qué decide</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>flex-direction</code></td>
+<td>Dirección del eje principal: <code>row</code>, <code>row-reverse</code>, <code>column</code>, <code>column-reverse</code></td>
+</tr>
+<tr>
+<td><code>flex-wrap</code></td>
+<td>Si los ítems pueden saltar de línea: <code>nowrap</code> (por defecto) o <code>wrap</code></td>
+</tr>
+<tr>
+<td><code>justify-content</code></td>
+<td>Reparto en el eje principal: <code>flex-start</code>, <code>center</code>, <code>space-between</code>, <code>space-around</code>, <code>space-evenly</code></td>
+</tr>
+<tr>
+<td><code>align-items</code></td>
+<td>Alineación en el eje cruzado: <code>stretch</code> (por defecto), <code>flex-start</code>, <code>center</code>, <code>flex-end</code>, <code>baseline</code></td>
+</tr>
+<tr>
+<td><code>align-content</code></td>
+<td>Alineación de las <strong>líneas</strong> cuando hay wrap. No mueve ítems sueltos</td>
+</tr>
+<tr>
+<td><code>gap</code></td>
+<td>Hueco entre ítems, sin tocar los bordes del padre</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nt">nav</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">flex</span><span class="p">;</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">  </span><span class="k">justify-content</span><span class="p">:</span><span class="w"> </span><span class="kc">space-between</span><span class="p">;</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">  </span><span class="k">align-items</span><span class="p">:</span><span class="w"> </span><span class="kc">center</span><span class="p">;</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">  </span><span class="k">gap</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="kt">rem</span><span class="p">;</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="p">}</span>
+</code></pre></div>
+<p>Ese <code>nav</code> pone el logo a un lado, los enlaces al otro, centrados en vertical, con un rem de aire entre ellos.</p>
+<div class="admonition predice">
+<p class="admonition-title">Predice</p>
+<p>Un <code>nav</code> con <code>display: flex</code> y cinco enlaces. Sin <code>flex-wrap</code>. La ventana mide 320 px y los enlaces no caben. ¿Se apilan en dos líneas o se aplastan?</p>
+</div>
+<div class="admonition ojo">
+<p class="admonition-title">Ojo</p>
+<p><code>align-content</code> no hace nada si los ítems caben en una sola línea. Si crees que «no va», mira antes si hay <code>flex-wrap: wrap</code> y de verdad hay varias filas.</p>
+</div>
+<div class="admonition comprueba">
+<p class="admonition-title">Comprueba</p>
+<ol>
+<li>¿Qué propiedad activa Flexbox?</li>
+<li>¿<code>justify-content</code> mueve en el eje principal o en el cruzado?</li>
+<li>¿Qué valor de <code>flex-wrap</code> hace falta para que <code>align-content</code> tenga efecto?</li>
+</ol>
+</div>
+<h2 id="bloque-3-flexbox-los-items">Bloque 3. Flexbox: los ítems<a class="headerlink" href="#bloque-3-flexbox-los-items" title="Permanent link">&para;</a></h2>
+<h3 id="31-tres-numeros-que-se-recuerdan-juntos">3.1 Tres números que se recuerdan juntos<a class="headerlink" href="#31-tres-numeros-que-se-recuerdan-juntos" title="Permanent link">&para;</a></h3>
+<p>Cada ítem puede decir cuánto crece, cuánto encoge y de qué tamaño parte.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="p">.</span><span class="nc">item</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span><span class="k">flex-grow</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">  </span><span class="k">flex-shrink</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">  </span><span class="k">flex-basis</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="p">}</span>
+</code></pre></div>
+<p>Se abrevia <code>flex: 1 1 0</code> (o, más corto, <code>flex: 1</code>).</p>
+<table>
+<thead>
+<tr>
+<th>Propiedad</th>
+<th>Por defecto</th>
+<th>Qué hace</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>flex-grow</code></td>
+<td>0</td>
+<td>Cuánto <strong>crece</strong> para comerse el hueco sobrante. 0 = no crece</td>
+</tr>
+<tr>
+<td><code>flex-shrink</code></td>
+<td>1</td>
+<td>Cuánto <strong>encoge</strong> si no caben. 0 = no encoge</td>
+</tr>
+<tr>
+<td><code>flex-basis</code></td>
+<td>auto</td>
+<td>Tamaño de partida, antes de crecer o encoger</td>
+</tr>
+<tr>
+<td><code>order</code></td>
+<td>0</td>
+<td>Orden visual, sin cambiar el HTML. Cuidado con la accesibilidad</td>
+</tr>
+<tr>
+<td><code>align-self</code></td>
+<td>auto</td>
+<td>Anula el <code>align-items</code> del padre solo para este ítem</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition ejemplo">
+<p class="admonition-title">Ejemplo</p>
+<p>Tres columnas con <code>flex: 1</code> se reparten el ancho a partes iguales. Si a la del medio le pones <code>flex-grow: 2</code>, se lleva el doble de hueco sobrante que las otras.</p>
+</div>
+<h3 id="32-un-calculo-que-sale-en-clase">3.2 Un cálculo que sale en clase<a class="headerlink" href="#32-un-calculo-que-sale-en-clase" title="Permanent link">&para;</a></h3>
+<p>Contenedor de 400 px. Tres ítems con <code>flex-basis: 0</code> y <code>flex-grow: 1, 2, 1</code>. El sobrante es todo el ancho (porque el basis es 0):</p>
+<ul>
+<li>ítem 1: 1/4 → 100 px</li>
+<li>ítem 2: 2/4 → 200 px</li>
+<li>ítem 3: 1/4 → 100 px</li>
+</ul>
+<p>Si el basis no es 0, primero se reserva ese tamaño y <strong>después</strong> se reparte lo que quede.</p>
+<div class="admonition ojo">
+<p class="admonition-title">Ojo</p>
+<p><code>order</code> cambia el orden en pantalla, no en el HTML. El lector de pantalla y el tabulador siguen el HTML. No lo uses para «arreglar» un menú: reordena el marcado.</p>
+</div>
+<div class="admonition comprueba">
+<p class="admonition-title">Comprueba</p>
+<ol>
+<li>¿Qué significa <code>flex: 1</code>?</li>
+<li>Si <code>flex-grow</code> vale 0 en todos, ¿quién se come el hueco sobrante?</li>
+<li>¿<code>align-self: center</code> en un ítem cambia a sus hermanos?</li>
+</ol>
+</div>
+<h2 id="bloque-4-css-grid">Bloque 4. CSS Grid<a class="headerlink" href="#bloque-4-css-grid" title="Permanent link">&para;</a></h2>
+<h3 id="41-filas-y-columnas-a-la-vez">4.1 Filas y columnas a la vez<a class="headerlink" href="#41-filas-y-columnas-a-la-vez" title="Permanent link">&para;</a></h3>
+<p>Flexbox coloca en <strong>una</strong> dirección. Grid dibuja una cuadrícula: filas y columnas, y cada hijo ocupa una o varias celdas.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="p">.</span><span class="nc">tablero</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="k">grid</span><span class="p">;</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">  </span><span class="k">grid-template-columns</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="n">fr</span><span class="w"> </span><span class="mi">1</span><span class="n">fr</span><span class="w"> </span><span class="mi">1</span><span class="n">fr</span><span class="p">;</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">  </span><span class="k">gap</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="kt">rem</span><span class="p">;</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="p">}</span>
+</code></pre></div>
+<p>Tres columnas del mismo ancho. <code>fr</code> es una fracción del espacio libre: <code>1fr 2fr</code> es un tercio y dos tercios.</p>
+<div class="admonition definicion">
+<p class="admonition-title">CSS Grid</p>
+<p>Sistema de layout en dos dimensiones. El padre (<code>display: grid</code>) define pistas (filas y columnas). Cada hijo se coloca en celdas, con línea de inicio y de fin, o con un nombre de área.</p>
+</div>
+<h3 id="42-lineas-y-areas">4.2 Líneas y áreas<a class="headerlink" href="#42-lineas-y-areas" title="Permanent link">&para;</a></h3>
+<p>Las líneas se numeran desde 1. Un ítem puede decir «de la línea 1 a la 3»:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="p">.</span><span class="nc">destacado</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">  </span><span class="k">grid-column</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">  </span><span class="k">grid-row</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="p">}</span>
+</code></pre></div>
+<p>Con nombres se lee mejor:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="p">.</span><span class="nc">pagina</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">  </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="k">grid</span><span class="p">;</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">  </span><span class="k">grid-template-columns</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="n">fr</span><span class="w"> </span><span class="mi">200</span><span class="kt">px</span><span class="p">;</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">  </span><span class="k">grid-template-areas</span><span class="p">:</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w">    </span><span class="s2">"cabecera cabecera"</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="w">    </span><span class="s2">"principal lateral"</span>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="w">    </span><span class="s2">"pie pie"</span><span class="p">;</span>
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="p">}</span>
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="nt">header</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">grid-area</span><span class="p">:</span><span class="w"> </span><span class="n">cabecera</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="nt">main</span><span class="w">   </span><span class="p">{</span><span class="w"> </span><span class="k">grid-area</span><span class="p">:</span><span class="w"> </span><span class="n">principal</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="nt">aside</span><span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="k">grid-area</span><span class="p">:</span><span class="w"> </span><span class="n">lateral</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a><span class="nt">footer</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">grid-area</span><span class="p">:</span><span class="w"> </span><span class="n">pie</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Propiedad</th>
+<th>Dónde</th>
+<th>Para qué</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>grid-template-columns</code></td>
+<td>padre</td>
+<td>Ancho de cada columna (<code>200px</code>, <code>1fr</code>, <code>repeat(3, 1fr)</code>)</td>
+</tr>
+<tr>
+<td><code>grid-template-rows</code></td>
+<td>padre</td>
+<td>Alto de cada fila</td>
+</tr>
+<tr>
+<td><code>grid-template-areas</code></td>
+<td>padre</td>
+<td>Mapa con nombres</td>
+</tr>
+<tr>
+<td><code>gap</code></td>
+<td>padre</td>
+<td>Hueco entre pistas</td>
+</tr>
+<tr>
+<td><code>grid-column</code> / <code>grid-row</code></td>
+<td>hijo</td>
+<td>De qué línea a qué línea</td>
+</tr>
+<tr>
+<td><code>grid-area</code></td>
+<td>hijo</td>
+<td>Nombre del área que ocupa</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition predice">
+<p class="admonition-title">Predice</p>
+<p><code>grid-template-columns: 100px 1fr 1fr</code> en un contenedor de 500 px. ¿Cuánto mide cada columna?</p>
+</div>
+<div class="admonition ojo">
+<p class="admonition-title">Ojo</p>
+<p>Grid no sustituye a Flexbox. Una página suele ser Grid por fuera (cabecera, columnas, pie) y Flexbox por dentro (el menú, las tarjetas de una fila).</p>
+</div>
+<div class="admonition comprueba">
+<p class="admonition-title">Comprueba</p>
+<ol>
+<li>¿Qué unidad usas para «el resto del hueco» en Grid?</li>
+<li>¿<code>grid-template-areas</code> va en el padre o en el hijo?</li>
+<li>¿Cuándo elegirías Flexbox en vez de Grid?</li>
+</ol>
+</div>
+<h2 id="bloque-5-media-queries">Bloque 5. Media queries<a class="headerlink" href="#bloque-5-media-queries" title="Permanent link">&para;</a></h2>
+<h3 id="51-el-css-pregunta-el-ancho">5.1 El CSS pregunta el ancho<a class="headerlink" href="#51-el-css-pregunta-el-ancho" title="Permanent link">&para;</a></h3>
+<p>Una media query es un «si el viewport mide tanto, aplica estas reglas». El HTML no cambia.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="p">.</span><span class="nc">caja</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">  </span><span class="k">background</span><span class="p">:</span><span class="w"> </span><span class="kc">navy</span><span class="p">;</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">  </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mi">24</span><span class="kt">px</span><span class="p">;</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="p">}</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="p">@</span><span class="k">media</span><span class="w"> </span><span class="o">(</span><span class="nt">max-width</span><span class="o">:</span><span class="w"> </span><span class="nt">768px</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="w">  </span><span class="p">.</span><span class="nc">caja</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="w">    </span><span class="k">background</span><span class="p">:</span><span class="w"> </span><span class="kc">teal</span><span class="p">;</span>
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="w">    </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mi">18</span><span class="kt">px</span><span class="p">;</span>
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="p">}</span>
+</code></pre></div>
+<p>Por encima de 768 px, navy y 24 px. A 768 px o menos, teal y 18 px.</p>
+<div class="admonition definicion">
+<p class="admonition-title">Media query</p>
+<p>Bloque <code>@media</code> con una condición sobre el viewport (ancho, alto, orientación). Las reglas de dentro solo se aplican si la condición se cumple.</p>
+</div>
+<h3 id="52-desktop-first-y-mobile-first">5.2 Desktop first y mobile first<a class="headerlink" href="#52-desktop-first-y-mobile-first" title="Permanent link">&para;</a></h3>
+<p><strong>Desktop first:</strong> escribes el CSS del portátil y, con <code>max-width</code>, recortas hacia el móvil.</p>
+<p><strong>Mobile first:</strong> escribes el CSS del móvil y, con <code>min-width</code>, añades reglas al agrandar.</p>
+<p>Los dos valen. En clase usaremos sobre todo <code>max-width</code>, que es el que sale en los ejercicios, y al final probarás uno con <code>min-width</code> para ver la diferencia.</p>
+<p>Un patrón habitual de menú:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="p">.</span><span class="nc">menu</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="w">  </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">flex</span><span class="p">;</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="w">  </span><span class="k">flex-direction</span><span class="p">:</span><span class="w"> </span><span class="kc">row</span><span class="p">;</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="w">  </span><span class="k">gap</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="kt">rem</span><span class="p">;</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="p">}</span>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="p">@</span><span class="k">media</span><span class="w"> </span><span class="o">(</span><span class="nt">max-width</span><span class="o">:</span><span class="w"> </span><span class="nt">600px</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="w">  </span><span class="p">.</span><span class="nc">menu</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="w">    </span><span class="k">flex-direction</span><span class="p">:</span><span class="w"> </span><span class="kc">column</span><span class="p">;</span>
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a><span class="p">}</span>
+</code></pre></div>
+<p>En el portátil, fila. En el móvil, columna. Mismo HTML.</p>
+<div class="admonition ojo">
+<p class="admonition-title">Ojo</p>
+<p>El punto de corte no es «el de Bootstrap» por obligación. Míralo con tu contenido: estrecha la ventana hasta que el diseño rompa, y pon el corte ahí. 600, 768 y 1024 px son puntos de partida, no leyes.</p>
+</div>
+<div class="admonition comprueba">
+<p class="admonition-title">Comprueba</p>
+<ol>
+<li>¿Hace falta un HTML distinto para el móvil si usas media queries?</li>
+<li>¿<code>max-width: 768px</code> se cumple en 800 px o en 700 px?</li>
+<li>¿Qué propiedad de Flexbox cambia un menú de fila a columna?</li>
+</ol>
+</div>
+<h2 id="anexo-a-glosario">Anexo A. Glosario<a class="headerlink" href="#anexo-a-glosario" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Término</th>
+<th>Significado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Layout</td>
+<td>Colocación de las cajas en la página</td>
+</tr>
+<tr>
+<td>Responsive</td>
+<td>El mismo HTML se reorganiza según el ancho</td>
+</tr>
+<tr>
+<td>Contenedor flex</td>
+<td>Elemento con <code>display: flex</code></td>
+</tr>
+<tr>
+<td>Ítem flex</td>
+<td>Hijo directo de un contenedor flex</td>
+</tr>
+<tr>
+<td>Eje principal</td>
+<td>Dirección de <code>flex-direction</code></td>
+</tr>
+<tr>
+<td><code>fr</code></td>
+<td>Fracción del espacio libre en Grid</td>
+</tr>
+<tr>
+<td>Área</td>
+<td>Región con nombre en <code>grid-template-areas</code></td>
+</tr>
+<tr>
+<td>Media query</td>
+<td>Bloque <code>@media</code> que aplica CSS según el viewport</td>
+</tr>
+<tr>
+<td>Breakpoint</td>
+<td>Ancho en el que cambia el layout</td>
+</tr>
+</tbody>
+</table>
+<h2 id="anexo-b-mapa">Anexo B. Mapa<a class="headerlink" href="#anexo-b-mapa" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>Mismo HTML
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>  -&gt; Flexbox (1 dimensión): menú, fila de tarjetas
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>  -&gt; Grid (2 dimensiones): página entera, tablero, áreas
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>  -&gt; @media (max-width / min-width): cambia direction, columnas, tipo
+</code></pre></div>
+<h2 id="anexo-c-autoevaluacion">Anexo C. Autoevaluación<a class="headerlink" href="#anexo-c-autoevaluacion" title="Permanent link">&para;</a></h2>
+<h3 id="preguntas-cortas">Preguntas cortas<a class="headerlink" href="#preguntas-cortas" title="Permanent link">&para;</a></h3>
+<ol>
+<li>¿Qué problema resuelve el diseño responsive que no resuelve hacer tres HTML?</li>
+<li>Cita tres propiedades del contenedor flex y di qué hace cada una.</li>
+<li>¿Qué es <code>flex: 1</code>?</li>
+<li>¿En qué se diferencia Grid de Flexbox?</li>
+<li>Escribe una media query que ponga <code>flex-direction: column</code> por debajo de 600 px.</li>
+</ol>
+<h3 id="tipo-test">Tipo test<a class="headerlink" href="#tipo-test" title="Permanent link">&para;</a></h3>
+<ol>
+<li><code>justify-content</code> reparte el espacio:<ul>
+<li>a) En el eje cruzado</li>
+<li>b) En el eje principal</li>
+<li>c) Solo si hay <code>flex-wrap: wrap</code></li>
+<li>d) Entre el padding y el borde</li>
+</ul>
+</li>
+<li><code>align-content</code>:<ul>
+<li>a) Alinea un ítem suelto</li>
+<li>b) Alinea las líneas cuando hay wrap</li>
+<li>c) Es lo mismo que <code>align-items</code></li>
+<li>d) Cambia el eje principal</li>
+</ul>
+</li>
+<li>En Grid, <code>1fr 2fr</code> en un contenedor de 300 px (sin gap) mide:<ul>
+<li>a) 100 px y 200 px</li>
+<li>b) 150 px y 150 px</li>
+<li>c) 1 px y 2 px</li>
+<li>d) 300 px y 600 px</li>
+</ul>
+</li>
+</ol>
+<h3 id="razona">Razona<a class="headerlink" href="#razona" title="Permanent link">&para;</a></h3>
+<p>Una tienda tiene cabecera, menú, listado de productos (tres por fila en portátil, uno en móvil) y un pie. Di qué pondrías en Grid, qué en Flexbox y qué media query escribirías. No hace falta el CSS entero: el criterio.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Pie" >
+        
+          
+          <a href="UT3-dosier.html" class="md-footer__link md-footer__link--prev" aria-label="Anterior: UT3. Hojas de estilo CSS">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              <div class="md-ellipsis">
+                UT3. Hojas de estilo CSS
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="UT5-dosier.html" class="md-footer__link md-footer__link--next" aria-label="Siguiente: UT5. JavaScript en el navegador">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Siguiente
+              </span>
+              <div class="md-ellipsis">
+                UT5. JavaScript en el navegador
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Dustin Randel de Lara García, Sant Josep Obrer. Material docente del módulo 0373.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.top", "navigation.footer", "navigation.indexes", "toc.follow", "search.highlight", "search.suggest", "content.code.copy", "content.code.annotate", "content.tabs.link"], "search": "assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.a5f9d56c.min.js"></script>
+      
+    
+  </body>
+</html>

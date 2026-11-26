@@ -1,0 +1,1623 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Apuntes del módulo 0373, 1.º DAW, DAM y ASIR">
+      
+      
+        <meta name="author" content="Dustin Randel de Lara García">
+      
+      
+        <link rel="canonical" href="https://dustinrandel.github.io/lenguajes-de-marcas/UT1-dosier.html">
+      
+      
+        <link rel="prev" href="index.html">
+      
+      
+        <link rel="next" href="UT2-dosier.html">
+      
+      
+        
+      
+      
+      <link rel="icon" href="assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.2">
+    
+    
+      
+        <title>Introducción a Lenguajes de Marcas - Lenguajes de marcas y sistemas de gestión de información</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Carlito:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Carlito";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="stylesheets/extra.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48.png">
+  <link rel="icon" sizes="any" href="assets/favicon.ico">
+  <link rel="apple-touch-icon" href="assets/logo.png">
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ut1-introduccion-a-lenguajes-de-marcas" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="index.html" title="Lenguajes de marcas y sistemas de gestión de información" class="md-header__button md-logo" aria-label="Lenguajes de marcas y sistemas de gestión de información" data-md-component="logo">
+      
+  <img src="assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Lenguajes de marcas y sistemas de gestión de información
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Introducción a Lenguajes de Marcas
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Cambiar a modo oscuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo oscuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Cambiar a modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/DustinRandel/lenguajes-de-marcas" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="Lenguajes de marcas y sistemas de gestión de información" class="md-nav__button md-logo" aria-label="Lenguajes de marcas y sistemas de gestión de información" data-md-component="logo">
+      
+  <img src="assets/logo.png" alt="logo">
+
+    </a>
+    Lenguajes de marcas y sistemas de gestión de información
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/DustinRandel/lenguajes-de-marcas" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UT1. Introducción a Lenguajes de Marcas
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="UT1-dosier.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UT1. Introducción a Lenguajes de Marcas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#como-usar-este-dosier" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cómo usar este dosier
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cómo usar este dosier">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#que-vas-a-aprender" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Qué vas a aprender
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bloque-1-que-es-un-lenguaje-de-marcas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bloque 1. Qué es un lenguaje de marcas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bloque 1. Qué es un lenguaje de marcas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-marcas-y-contenido" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 Marcas y contenido
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-caracteristicas-comunes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2 Características comunes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-no-son-lenguajes-de-programacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3 No son lenguajes de programación
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bloque-2-un-poco-de-historia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bloque 2. Un poco de historia
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bloque 2. Un poco de historia">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-de-gml-a-xml" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 De GML a XML
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-que-se-quedo-de-cada-uno" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 Qué se quedó de cada uno
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bloque-3-los-lenguajes-mas-habituales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bloque 3. Los lenguajes más habituales
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bloque 3. Los lenguajes más habituales">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-un-vistazo-rapido" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 Un vistazo rápido
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-latex" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 LaTeX
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-markdown" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 Markdown
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-xml" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 XML
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-html" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5 HTML
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bloque-4-herramientas-y-primer-documento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bloque 4. Herramientas y primer documento
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bloque 4. Herramientas y primer documento">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-editores" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 Editores
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-tu-primer-documento-html" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 Tu primer documento HTML
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bloque-5-elegir-el-lenguaje-adecuado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bloque 5. Elegir el lenguaje adecuado
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anexo-a-glosario" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Anexo A. Glosario
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anexo-b-mapa-resumen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Anexo B. Mapa resumen
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anexo-c-autoevaluacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Anexo C. Autoevaluación
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Anexo C. Autoevaluación">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#preguntas-cortas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Preguntas cortas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tipo-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tipo test
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#razona" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Razona
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="UT2-dosier.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UT2. El documento HTML
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="UT3-dosier.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UT3. Hojas de estilo CSS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="UT4-dosier.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UT4. Layout responsive
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="UT5-dosier.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UT5. JavaScript en el navegador
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="UT6-dosier.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UT6. XML y JSON
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#como-usar-este-dosier" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cómo usar este dosier
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cómo usar este dosier">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#que-vas-a-aprender" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Qué vas a aprender
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bloque-1-que-es-un-lenguaje-de-marcas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bloque 1. Qué es un lenguaje de marcas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bloque 1. Qué es un lenguaje de marcas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-marcas-y-contenido" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 Marcas y contenido
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-caracteristicas-comunes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2 Características comunes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-no-son-lenguajes-de-programacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3 No son lenguajes de programación
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bloque-2-un-poco-de-historia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bloque 2. Un poco de historia
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bloque 2. Un poco de historia">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-de-gml-a-xml" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 De GML a XML
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-que-se-quedo-de-cada-uno" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 Qué se quedó de cada uno
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bloque-3-los-lenguajes-mas-habituales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bloque 3. Los lenguajes más habituales
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bloque 3. Los lenguajes más habituales">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-un-vistazo-rapido" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 Un vistazo rápido
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-latex" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 LaTeX
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-markdown" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 Markdown
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-xml" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 XML
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-html" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5 HTML
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bloque-4-herramientas-y-primer-documento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bloque 4. Herramientas y primer documento
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bloque 4. Herramientas y primer documento">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-editores" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 Editores
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-tu-primer-documento-html" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 Tu primer documento HTML
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bloque-5-elegir-el-lenguaje-adecuado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bloque 5. Elegir el lenguaje adecuado
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anexo-a-glosario" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Anexo A. Glosario
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anexo-b-mapa-resumen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Anexo B. Mapa resumen
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anexo-c-autoevaluacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Anexo C. Autoevaluación
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Anexo C. Autoevaluación">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#preguntas-cortas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Preguntas cortas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tipo-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tipo test
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#razona" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Razona
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="ut1-introduccion-a-lenguajes-de-marcas">UT1. Introducción a Lenguajes de Marcas<a class="headerlink" href="#ut1-introduccion-a-lenguajes-de-marcas" title="Permanent link">&para;</a></h1>
+<h2 class="nobreak" id="como-usar-este-dosier">Cómo usar este dosier<a class="headerlink" href="#como-usar-este-dosier" title="Permanent link">&para;</a></h2>
+<p>Esta primera unidad de trabajo es la base de todo el módulo. Antes de escribir una sola página web conviene saber <strong>qué es un lenguaje de marcas</strong>, de dónde viene y para qué sirve cada uno de los más habituales. Al final de la unidad ya habrás escrito tu primer documento HTML y lo habrás abierto en el navegador.</p>
+<p>Es un dosier para leer con un editor de texto abierto. Copia los ejemplos, cámbialos y mira qué pasa. Se aprende mucho más rompiendo un ejemplo que leyéndolo.</p>
+<p>A lo largo del texto encontrarás cuatro tipos de caja:</p>
+<div class="admonition definicion">
+<p class="admonition-title">Definición</p>
+<p>Un término que tienes que saber explicar con tus propias palabras.</p>
+</div>
+<div class="admonition ejemplo">
+<p class="admonition-title">Ejemplo</p>
+<p>Un caso concreto con su código.</p>
+</div>
+<div class="admonition ojo">
+<p class="admonition-title">Ojo</p>
+<p>Un error típico o una confusión frecuente.</p>
+</div>
+<div class="admonition comprueba">
+<p class="admonition-title">Comprueba</p>
+<p>Preguntas cortas al final de cada bloque. Si no sabes contestarlas sin mirar, vuelve a leer el bloque.</p>
+</div>
+<h3 id="que-vas-a-aprender">Qué vas a aprender<a class="headerlink" href="#que-vas-a-aprender" title="Permanent link">&para;</a></h3>
+<p>Al terminar esta unidad deberías ser capaz de:</p>
+<ul>
+<li><strong>Explicar</strong> qué es un lenguaje de marcas y qué tienen en común todos ellos.</li>
+<li><strong>Distinguir</strong> un lenguaje de marcas de un lenguaje de programación.</li>
+<li><strong>Ordenar</strong> en el tiempo GML, SGML, HTML y XML y decir qué aportó cada uno.</li>
+<li><strong>Reconocer</strong> las marcas de XML, HTML, XHTML, BBCode, LaTeX, Markdown y SVG.</li>
+<li><strong>Elegir</strong> el lenguaje adecuado para un caso concreto.</li>
+<li><strong>Crear</strong> y abrir en el navegador un documento HTML con un editor de texto.</li>
+</ul>
+<h2 id="bloque-1-que-es-un-lenguaje-de-marcas">Bloque 1. Qué es un lenguaje de marcas<a class="headerlink" href="#bloque-1-que-es-un-lenguaje-de-marcas" title="Permanent link">&para;</a></h2>
+<h3 id="11-marcas-y-contenido">1.1 Marcas y contenido<a class="headerlink" href="#11-marcas-y-contenido" title="Permanent link">&para;</a></h3>
+<p>Cuando escribes en un procesador de textos, el programa guarda de forma interna dónde empieza un título, qué palabra va en negrita o dónde acaba un párrafo. Un lenguaje de marcas hace lo mismo, pero <strong>a la vista</strong>: esas indicaciones se escriben dentro del propio texto, con unos caracteres especiales.</p>
+<div class="admonition definicion">
+<p class="admonition-title">Lenguaje de marcas</p>
+<p>Lenguaje que sirve para crear documentos que representan información, añadiendo al texto unas <strong>marcas</strong> (también llamadas <strong>etiquetas</strong>) que indican su estructura o su aspecto. Esa información se puede ver en un navegador, usar como fichero de configuración o intercambiar entre aplicaciones.</p>
+</div>
+<p>Las marcas se escriben con caracteres como <code>&lt;</code>, <code>&gt;</code> y <code>/</code>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Esto es un párrafo con una palabra en <span class="p">&lt;</span><span class="nt">strong</span><span class="p">&gt;</span>negrita<span class="p">&lt;/</span><span class="nt">strong</span><span class="p">&gt;</span>.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>El navegador no enseña las marcas: las interpreta y muestra solo el resultado, un párrafo con una palabra en negrita.</p>
+<figure><img src="imagenes/UT1-marcas-y-resultado.png" alt="El navegador interpreta las marcas y enseña solo el resultado"></figure>
+
+<h3 id="12-caracteristicas-comunes">1.2 Características comunes<a class="headerlink" href="#12-caracteristicas-comunes" title="Permanent link">&para;</a></h3>
+<p>Todos los lenguajes de marcas comparten cuatro rasgos:</p>
+<ul>
+<li><strong>Texto plano.</strong> Son ficheros de texto normal, sin formato oculto. Se pueden abrir y editar en cualquier editor, en cualquier sistema operativo.</li>
+<li><strong>Compactos.</strong> Las marcas van mezcladas con el contenido, pero no aparecen en el resultado final.</li>
+<li><strong>De procesamiento ligero.</strong> Crear un documento es fácil y las etiquetas se pueden combinar con otros lenguajes. Por ejemplo, HTML admite CSS y JavaScript dentro.</li>
+<li><strong>Flexibles.</strong> Un sistema de etiquetas sirve para campos muy distintos: páginas web, libros, datos, fórmulas, dibujos.</li>
+</ul>
+<h3 id="13-no-son-lenguajes-de-programacion">1.3 No son lenguajes de programación<a class="headerlink" href="#13-no-son-lenguajes-de-programacion" title="Permanent link">&para;</a></h3>
+<div class="admonition ojo">
+<p class="admonition-title">Ojo</p>
+<p>Un lenguaje de marcas <strong>no es un lenguaje de programación</strong>. No tiene variables, ni condiciones, ni bucles: no ejecuta nada, solo <strong>describe</strong> información. Quien la interpreta (el navegador, un conversor, otra aplicación) es quien hace algo con ella.</p>
+</div>
+<p>Por eso no se dice «programar en HTML», sino «escribir» o «maquetar» en HTML. La programación llegará más adelante con JavaScript.</p>
+<div class="admonition comprueba">
+<p class="admonition-title">Comprueba</p>
+<ol>
+<li>¿Qué diferencia hay entre una marca y el contenido?</li>
+<li>¿Por qué se puede abrir un fichero HTML con el Bloc de notas?</li>
+<li>Nombra una cosa que pueda hacer un lenguaje de programación y no uno de marcas.</li>
+</ol>
+</div>
+<h2 id="bloque-2-un-poco-de-historia">Bloque 2. Un poco de historia<a class="headerlink" href="#bloque-2-un-poco-de-historia" title="Permanent link">&para;</a></h2>
+<h3 id="21-de-gml-a-xml">2.1 De GML a XML<a class="headerlink" href="#21-de-gml-a-xml" title="Permanent link">&para;</a></h3>
+<p>Los lenguajes que usamos hoy vienen unos de otros. Esta es la línea principal:</p>
+<table>
+<thead>
+<tr>
+<th>Año aprox.</th>
+<th>Lenguaje</th>
+<th>Qué aportó</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Años 60</td>
+<td><strong>GML</strong> (Generalized Markup Language)</td>
+<td>Primer intento de estandarizar cómo se comparte información entre sistemas distintos.</td>
+</tr>
+<tr>
+<td>Años 80</td>
+<td><strong>SGML</strong> (Standard Generalized Markup Language)</td>
+<td>Evolución de GML, norma ISO 8879. Muy potente, pero demasiado complejo para uso industrial.</td>
+</tr>
+<tr>
+<td>Años 90</td>
+<td><strong>HTML</strong></td>
+<td>Tim Berners-Lee simplifica SGML para poder ver información en los navegadores web.</td>
+</tr>
+<tr>
+<td>1998</td>
+<td><strong>XML</strong></td>
+<td>Permite definir las etiquetas que uno quiera y resuelve las limitaciones de HTML.</td>
+</tr>
+</tbody>
+</table>
+<figure><img src="imagenes/UT1-linea-historia.png" alt="De GML a XML: qué lenguaje sale de cuál"></figure>
+
+<h3 id="22-que-se-quedo-de-cada-uno">2.2 Qué se quedó de cada uno<a class="headerlink" href="#22-que-se-quedo-de-cada-uno" title="Permanent link">&para;</a></h3>
+<p>SGML es el «abuelo»: HTML y XML nacieron de él, cada uno con un objetivo distinto. HTML se centra en <strong>mostrar</strong> páginas con un conjunto fijo de etiquetas. XML se centra en <strong>describir y transportar</strong> datos con etiquetas que define quien lo escribe.</p>
+<div class="admonition comprueba">
+<p class="admonition-title">Comprueba</p>
+<ol>
+<li>¿De qué lenguaje parten HTML y XML?</li>
+<li>¿Por qué no se popularizó SGML en la industria?</li>
+<li>¿Cuál de los dos, HTML o XML, permite inventar etiquetas propias?</li>
+</ol>
+</div>
+<h2 id="bloque-3-los-lenguajes-mas-habituales">Bloque 3. Los lenguajes más habituales<a class="headerlink" href="#bloque-3-los-lenguajes-mas-habituales" title="Permanent link">&para;</a></h2>
+<h3 id="31-un-vistazo-rapido">3.1 Un vistazo rápido<a class="headerlink" href="#31-un-vistazo-rapido" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Lenguaje</th>
+<th>Ejemplos de sus marcas</th>
+<th>Para qué se usa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>XML</td>
+<td><code>&lt;persona&gt;</code>, <code>&lt;nombre&gt;</code>, <code>&lt;/nombre&gt;</code></td>
+<td>Datos y configuración</td>
+</tr>
+<tr>
+<td>HTML</td>
+<td><code>&lt;p&gt;</code>, <code>&lt;h1&gt;</code>, <code>&lt;a&gt;</code>, <code>&lt;strong&gt;</code></td>
+<td>Páginas web</td>
+</tr>
+<tr>
+<td>XHTML</td>
+<td><code>&lt;html&gt;</code>, <code>&lt;body&gt;</code>, <code>&lt;p&gt;</code></td>
+<td>HTML con las reglas estrictas de XML</td>
+</tr>
+<tr>
+<td>BBCode</td>
+<td><code>[b]...[/b]</code>, <code>[url]...[/url]</code></td>
+<td>Foros y comentarios</td>
+</tr>
+<tr>
+<td>LaTeX</td>
+<td><code>\section{...}</code>, <code>\textbf{...}</code>, <code>\frac{...}</code></td>
+<td>Documentos científicos</td>
+</tr>
+<tr>
+<td>Markdown</td>
+<td><code>#</code>, <code>**...**</code>, <code>*...*</code>, <code>`...`</code></td>
+<td>Documentación técnica</td>
+</tr>
+<tr>
+<td>SVG</td>
+<td><code>&lt;svg&gt;</code>, <code>&lt;path&gt;</code>, <code>&lt;circle&gt;</code></td>
+<td>Dibujos vectoriales</td>
+</tr>
+</tbody>
+</table>
+<p>Fíjate en que no todos usan <code>&lt;</code> y <code>&gt;</code>: BBCode usa corchetes, LaTeX usa barras invertidas y Markdown usa símbolos sueltos. Lo que los hace lenguajes de marcas es la idea, no los caracteres.</p>
+<h3 id="32-latex">3.2 LaTeX<a class="headerlink" href="#32-latex" title="Permanent link">&para;</a></h3>
+<p>LaTeX se usa para escribir documentos científicos con calidad profesional.</p>
+<ul>
+<li><strong>Tipografía cuidada.</strong> Controla con precisión el aspecto del documento, sobre todo en fórmulas matemáticas.</li>
+<li><strong>Numeración automática</strong> de secciones, figuras, tablas y referencias bibliográficas.</li>
+<li><strong>Estándar académico.</strong> Es el preferido en universidades y publicaciones científicas.</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">\section</span><span class="nb">{</span>Introducción<span class="nb">}</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>Este texto tiene una parte en <span class="k">\textbf</span><span class="nb">{</span>negrita<span class="nb">}</span> y una fracción: <span class="s">$</span><span class="nv">\frac</span><span class="nb">{</span><span class="m">1</span><span class="nb">}{</span><span class="m">2</span><span class="nb">}</span><span class="s">$</span>.
+</code></pre></div>
+<h3 id="33-markdown">3.3 Markdown<a class="headerlink" href="#33-markdown" title="Permanent link">&para;</a></h3>
+<p>Markdown es un lenguaje ligero para dar formato a un texto con muy pocos símbolos. Esta misma web está escrita en Markdown.</p>
+<ul>
+<li><strong>Sintaxis sencilla</strong>, fácil de aprender y de escribir.</li>
+<li><strong>Se convierte</strong> sin esfuerzo a HTML, PDF y otros formatos.</li>
+<li><strong>Muy extendido</strong>: lo entienden GitHub, blogs, wikis y la mayoría de los editores.</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="gh"># Mi título</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>Un párrafo con <span class="gs">**negrita**</span>, <span class="ge">*cursiva*</span> y <span class="sb">`código`</span>.
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="k">-</span><span class="w"> </span>Primer elemento
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="k">-</span><span class="w"> </span>Segundo elemento
+</code></pre></div>
+<h3 id="34-xml">3.4 XML<a class="headerlink" href="#34-xml" title="Permanent link">&para;</a></h3>
+<p>XML (<em>eXtensible Markup Language</em>) permite crear etiquetas propias, adaptadas a cada proyecto.</p>
+<ul>
+<li>Es un <strong>metalenguaje</strong>: sirve para definir otros lenguajes, como XHTML, RSS o SVG.</li>
+<li>Su estructura es <strong>jerárquica</strong>: un árbol que empieza en un nodo raíz.</li>
+<li>Es un estándar de <strong>intercambio</strong> de datos entre sistemas.</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="nt">&lt;alumnos&gt;</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">  </span><span class="nt">&lt;alumno&gt;</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">    </span><span class="nt">&lt;nombre&gt;</span>Marta<span class="nt">&lt;/nombre&gt;</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">    </span><span class="nt">&lt;curso&gt;</span>1.º<span class="w"> </span>DAW<span class="nt">&lt;/curso&gt;</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">  </span><span class="nt">&lt;/alumno&gt;</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">  </span><span class="nt">&lt;alumno&gt;</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">    </span><span class="nt">&lt;nombre&gt;</span>Pau<span class="nt">&lt;/nombre&gt;</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">    </span><span class="nt">&lt;curso&gt;</span>1.º<span class="w"> </span>DAW<span class="nt">&lt;/curso&gt;</span>
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="w">  </span><span class="nt">&lt;/alumno&gt;</span>
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="nt">&lt;/alumnos&gt;</span>
+</code></pre></div>
+<p>Aquí <code>&lt;alumnos&gt;</code> es la raíz y contiene dos nodos <code>&lt;alumno&gt;</code>, cada uno con sus hijos. Las etiquetas no existían de antemano: las hemos inventado nosotros.</p>
+<figure><img src="imagenes/UT1-arbol-xml.png" alt="El XML de alumnos dibujado como árbol"></figure>
+
+<h3 id="35-html">3.5 HTML<a class="headerlink" href="#35-html" title="Permanent link">&para;</a></h3>
+<p>HTML (<em>HyperText Markup Language</em>) es el estándar para crear páginas web. Combina texto, imágenes, enlaces y contenido multimedia.</p>
+<ul>
+<li>Estructura <strong>semántica</strong> clara.</li>
+<li><strong>Compatibilidad</strong> universal: cualquier navegador lo entiende.</li>
+<li><strong>Evolución</strong> constante: la versión actual es HTML5.</li>
+<li>Se integra con <strong>CSS</strong> (aspecto) y <strong>JavaScript</strong> (comportamiento).</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Mi primera página<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Esto es un párrafo con un <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"https://www.santjosepobrer.es"</span><span class="p">&gt;</span>enlace<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</code></pre></div>
+<div class="admonition ejemplo">
+<p class="admonition-title">Ejemplo</p>
+<p>En HTML las etiquetas casi siempre van por parejas: una de apertura (<code>&lt;p&gt;</code>) y una de cierre (<code>&lt;/p&gt;</code>), con el contenido en medio. Algunas, como <code>&lt;br&gt;</code> o <code>&lt;img&gt;</code>, no tienen contenido y no se cierran.</p>
+</div>
+<div class="admonition comprueba">
+<p class="admonition-title">Comprueba</p>
+<ol>
+<li>¿Qué significa que XML sea un «metalenguaje»?</li>
+<li>¿Qué lenguaje de la tabla usarías para escribir un artículo con fórmulas matemáticas?</li>
+<li>Escribe en XML dos libros con título y autor.</li>
+</ol>
+</div>
+<h2 id="bloque-4-herramientas-y-primer-documento">Bloque 4. Herramientas y primer documento<a class="headerlink" href="#bloque-4-herramientas-y-primer-documento" title="Permanent link">&para;</a></h2>
+<h3 id="41-editores">4.1 Editores<a class="headerlink" href="#41-editores" title="Permanent link">&para;</a></h3>
+<p>Un lenguaje de marcas es texto, así que basta cualquier editor de texto. Hay tres opciones habituales:</p>
+<ul>
+<li><strong>Bloc de notas.</strong> Lo más básico. Hay que guardar el archivo con extensión <code>.html</code> para que el navegador lo abra como página web.</li>
+<li><strong>Notepad++.</strong> Editor libre con coloreado de sintaxis y numeración de líneas, muy útil para localizar errores.</li>
+<li><strong>Visual Studio Code.</strong> Editor de Microsoft con autocompletado, extensiones y servidor local para desarrollo. Es el que usaremos en clase.</li>
+</ul>
+<div class="admonition ojo">
+<p class="admonition-title">Ojo</p>
+<p>Si guardas el archivo como <code>pagina.html.txt</code>, el navegador lo mostrará como texto y no como página. Comprueba siempre la extensión real, sobre todo en Windows, que suele ocultarla.</p>
+</div>
+<h3 id="42-tu-primer-documento-html">4.2 Tu primer documento HTML<a class="headerlink" href="#42-tu-primer-documento-html" title="Permanent link">&para;</a></h3>
+<p>Crea un archivo <code>index.html</code> con este contenido y ábrelo con doble clic:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">"es"</span><span class="p">&gt;</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">"UTF-8"</span><span class="p">&gt;</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Mi primera página<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Hola, mundo<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Este es mi primer documento escrito en un lenguaje de marcas.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div>
+<figure><img src="imagenes/UT1-estructura-html.png" alt="Qué hace cada parte del documento"></figure>
+
+<div class="admonition comprueba">
+<p class="admonition-title">Comprueba</p>
+<p>Antes de abrirlo, predice qué verás en la pestaña del navegador y qué verás en la página. Después ábrelo y compara. ¿Dónde aparece el texto del <code>&lt;title&gt;</code>?</p>
+</div>
+<h2 id="bloque-5-elegir-el-lenguaje-adecuado">Bloque 5. Elegir el lenguaje adecuado<a class="headerlink" href="#bloque-5-elegir-el-lenguaje-adecuado" title="Permanent link">&para;</a></h2>
+<p>Ningún lenguaje es el mejor en todo. Antes de empezar, piensa en cuatro cosas:</p>
+<ol>
+<li><strong>El propósito.</strong> ¿Es una página web, documentación, intercambio de datos o configuración?</li>
+<li><strong>La audiencia.</strong> ¿La van a leer desarrolladores, usuarios finales o programas?</li>
+<li><strong>La complejidad.</strong> ¿La estructura es sencilla o es un documento científico complejo?</li>
+<li><strong>La compatibilidad.</strong> ¿Qué herramientas y plataformas tienen que poder usarlo?</li>
+</ol>
+<div class="admonition ejemplo">
+<p class="admonition-title">Ejemplo</p>
+<p>Un manual técnico para el equipo, que se versiona en GitHub, encaja con <strong>Markdown</strong>. Una lista de productos que otra aplicación debe leer encaja con <strong>XML</strong>. La web pública de la tienda, con <strong>HTML</strong>. Una tesis con muchas fórmulas, con <strong>LaTeX</strong>.</p>
+</div>
+<div class="admonition comprueba">
+<p class="admonition-title">Comprueba</p>
+<p>¿Qué lenguaje elegirías para cada caso y por qué? a) Un foro de alumnos. b) Un logotipo que se vea nítido a cualquier tamaño. c) Un fichero de configuración que leen varios programas.</p>
+</div>
+<h2 id="anexo-a-glosario">Anexo A. Glosario<a class="headerlink" href="#anexo-a-glosario" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Término</th>
+<th>Significado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Marca o etiqueta</td>
+<td>Elemento del lenguaje, como <code>&lt;p&gt;</code>, que indica la estructura o el aspecto del contenido.</td>
+</tr>
+<tr>
+<td>Texto plano</td>
+<td>Texto sin formato oculto, que se puede abrir con cualquier editor.</td>
+</tr>
+<tr>
+<td>Metalenguaje</td>
+<td>Lenguaje que sirve para definir otros lenguajes.</td>
+</tr>
+<tr>
+<td>Nodo raíz</td>
+<td>Elemento que contiene a todos los demás en un documento XML.</td>
+</tr>
+<tr>
+<td>SGML</td>
+<td>Lenguaje estándar (ISO 8879) del que descienden HTML y XML.</td>
+</tr>
+<tr>
+<td>Navegador</td>
+<td>Programa que interpreta HTML y muestra la página.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="anexo-b-mapa-resumen">Anexo B. Mapa resumen<a class="headerlink" href="#anexo-b-mapa-resumen" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>GML  -&gt;  SGML  -&gt;  HTML (páginas web, años 90)
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>                \-&gt;  XML  (datos, 1998)  -&gt;  XHTML, RSS, SVG
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>Fuera de esa línea: Markdown, BBCode, LaTeX
+</code></pre></div>
+<h2 id="anexo-c-autoevaluacion">Anexo C. Autoevaluación<a class="headerlink" href="#anexo-c-autoevaluacion" title="Permanent link">&para;</a></h2>
+<h3 id="preguntas-cortas">Preguntas cortas<a class="headerlink" href="#preguntas-cortas" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Define «lenguaje de marcas» con tus palabras.</li>
+<li>Cita tres características comunes a los lenguajes de marcas.</li>
+<li>¿Por qué HTML no es un lenguaje de programación?</li>
+<li>Ordena de más antiguo a más reciente: XML, GML, HTML, SGML.</li>
+</ol>
+<h3 id="tipo-test">Tipo test<a class="headerlink" href="#tipo-test" title="Permanent link">&para;</a></h3>
+<ol>
+<li>¿Cuál de estos es un metalenguaje?<ul>
+<li>a) HTML</li>
+<li>b) XML</li>
+<li>c) Markdown</li>
+<li>d) BBCode</li>
+</ul>
+</li>
+<li>¿Qué extensión debe tener un archivo para que el navegador lo abra como página web?<ul>
+<li>a) <code>.txt</code></li>
+<li>b) <code>.doc</code></li>
+<li>c) <code>.html</code></li>
+<li>d) <code>.xmlx</code></li>
+</ul>
+</li>
+</ol>
+<h3 id="razona">Razona<a class="headerlink" href="#razona" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Una academia quiere publicar unos apuntes que se puedan convertir a web y a PDF y que cualquier profesor pueda editar sin formación. ¿Qué lenguaje les recomendarías y por qué?</li>
+</ol>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Pie" >
+        
+          
+          <a href="index.html" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Inicio">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              <div class="md-ellipsis">
+                Inicio
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="UT2-dosier.html" class="md-footer__link md-footer__link--next" aria-label="Siguiente: UT2. El documento HTML">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Siguiente
+              </span>
+              <div class="md-ellipsis">
+                UT2. El documento HTML
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Dustin Randel de Lara García, Sant Josep Obrer. Material docente del módulo 0373.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.top", "navigation.footer", "navigation.indexes", "toc.follow", "search.highlight", "search.suggest", "content.code.copy", "content.code.annotate", "content.tabs.link"], "search": "assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.a5f9d56c.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,1435 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Apuntes del módulo 0373, 1.º DAW, DAM y ASIR">
+      
+      
+        <meta name="author" content="Dustin Randel de Lara García">
+      
+      
+        <link rel="canonical" href="https://dustinrandel.github.io/lenguajes-de-marcas/UT5-dosier.html">
+      
+      
+        <link rel="prev" href="UT4-dosier.html">
+      
+      
+        <link rel="next" href="UT6-dosier.html">
+      
+      
+        
+      
+      
+      <link rel="icon" href="assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.2">
+    
+    
+      
+        <title>JavaScript en el navegador - Lenguajes de marcas y sistemas de gestión de información</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Carlito:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Carlito";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="stylesheets/extra.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48.png">
+  <link rel="icon" sizes="any" href="assets/favicon.ico">
+  <link rel="apple-touch-icon" href="assets/logo.png">
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ut5-javascript-en-el-navegador" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="index.html" title="Lenguajes de marcas y sistemas de gestión de información" class="md-header__button md-logo" aria-label="Lenguajes de marcas y sistemas de gestión de información" data-md-component="logo">
+      
+  <img src="assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Lenguajes de marcas y sistemas de gestión de información
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              JavaScript en el navegador
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Cambiar a modo oscuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo oscuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Cambiar a modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/DustinRandel/lenguajes-de-marcas" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="Lenguajes de marcas y sistemas de gestión de información" class="md-nav__button md-logo" aria-label="Lenguajes de marcas y sistemas de gestión de información" data-md-component="logo">
+      
+  <img src="assets/logo.png" alt="logo">
+
+    </a>
+    Lenguajes de marcas y sistemas de gestión de información
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/DustinRandel/lenguajes-de-marcas" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="UT1-dosier.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UT1. Introducción a Lenguajes de Marcas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="UT2-dosier.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UT2. El documento HTML
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="UT3-dosier.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UT3. Hojas de estilo CSS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="UT4-dosier.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UT4. Layout responsive
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UT5. JavaScript en el navegador
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="UT5-dosier.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UT5. JavaScript en el navegador
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#como-usar-este-dosier" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cómo usar este dosier
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cómo usar este dosier">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#que-vas-a-aprender" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Qué vas a aprender
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#indice" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Índice
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bloque-1-que-es-javascript-y-como-se-incluye" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bloque 1. Qué es JavaScript y cómo se incluye
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bloque 1. Qué es JavaScript y cómo se incluye">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-el-tercer-lenguaje-del-navegador" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 El tercer lenguaje del navegador
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-un-archivo-externo-al-final-del-body" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2 Un archivo externo, al final del body
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bloque-2-variables-y-funciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bloque 2. Variables y funciones
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bloque 2. Variables y funciones">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-let-y-const" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 let y const
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-una-funcion-es-un-bloque-con-nombre" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 Una función es un bloque con nombre
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bloque-3-el-dom" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bloque 3. El DOM
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bloque 3. El DOM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-el-html-como-arbol-de-objetos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 El HTML como árbol de objetos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-lo-que-cambias-es-el-documento-en-pantalla" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Lo que cambias es el documento en pantalla
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bloque-4-eventos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bloque 4. Eventos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bloque 4. Eventos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-el-clic-no-es-magia-te-suscribes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 El clic no es magia: te suscribes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-un-ejemplo-que-se-prueba-entero" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 Un ejemplo que se prueba entero
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anexo-a-glosario" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Anexo A. Glosario
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anexo-b-mapa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Anexo B. Mapa
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anexo-c-autoevaluacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Anexo C. Autoevaluación
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Anexo C. Autoevaluación">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#preguntas-cortas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Preguntas cortas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tipo-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tipo test
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#razona" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Razona
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="UT6-dosier.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UT6. XML y JSON
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#como-usar-este-dosier" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cómo usar este dosier
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cómo usar este dosier">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#que-vas-a-aprender" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Qué vas a aprender
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#indice" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Índice
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bloque-1-que-es-javascript-y-como-se-incluye" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bloque 1. Qué es JavaScript y cómo se incluye
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bloque 1. Qué es JavaScript y cómo se incluye">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-el-tercer-lenguaje-del-navegador" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 El tercer lenguaje del navegador
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-un-archivo-externo-al-final-del-body" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2 Un archivo externo, al final del body
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bloque-2-variables-y-funciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bloque 2. Variables y funciones
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bloque 2. Variables y funciones">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-let-y-const" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 let y const
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-una-funcion-es-un-bloque-con-nombre" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 Una función es un bloque con nombre
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bloque-3-el-dom" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bloque 3. El DOM
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bloque 3. El DOM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-el-html-como-arbol-de-objetos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 El HTML como árbol de objetos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-lo-que-cambias-es-el-documento-en-pantalla" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Lo que cambias es el documento en pantalla
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bloque-4-eventos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bloque 4. Eventos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bloque 4. Eventos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-el-clic-no-es-magia-te-suscribes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 El clic no es magia: te suscribes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-un-ejemplo-que-se-prueba-entero" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 Un ejemplo que se prueba entero
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anexo-a-glosario" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Anexo A. Glosario
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anexo-b-mapa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Anexo B. Mapa
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anexo-c-autoevaluacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Anexo C. Autoevaluación
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Anexo C. Autoevaluación">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#preguntas-cortas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Preguntas cortas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tipo-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tipo test
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#razona" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Razona
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="ut5-javascript-en-el-navegador">UT5. JavaScript en el navegador<a class="headerlink" href="#ut5-javascript-en-el-navegador" title="Permanent link">&para;</a></h1>
+<h2 class="nobreak" id="como-usar-este-dosier">Cómo usar este dosier<a class="headerlink" href="#como-usar-este-dosier" title="Permanent link">&para;</a></h2>
+<p>HTML describe. CSS pinta. JavaScript <strong>reacciona</strong>: un clic, un texto que cambia, un formulario que se comprueba antes de enviar. Es el primer lenguaje de programación del módulo, y se ejecuta en el navegador.</p>
+<p>Copia los ejemplos a un <code>script.js</code> enlazado al final del <code>body</code>. F12, pestaña Consola, es donde salen los errores.</p>
+<h3 id="que-vas-a-aprender">Qué vas a aprender<a class="headerlink" href="#que-vas-a-aprender" title="Permanent link">&para;</a></h3>
+<p>Al terminar esta unidad deberías ser capaz de:</p>
+<ul>
+<li><strong>Enlazar</strong> un archivo <code>.js</code> al HTML y verlo ejecutar.</li>
+<li><strong>Declarar</strong> datos con <code>let</code> y <code>const</code>.</li>
+<li><strong>Seleccionar</strong> un elemento del DOM y cambiar su texto o su estilo.</li>
+<li><strong>Reaccionar</strong> a un clic con <code>addEventListener</code>.</li>
+<li><strong>Explicar</strong> por qué el script va al final del <code>body</code>.</li>
+</ul>
+<h3 id="indice">Índice<a class="headerlink" href="#indice" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Bloque</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#bloque-1-que-es-javascript-y-como-se-incluye">1</a></td>
+<td>Qué es JavaScript y cómo se incluye</td>
+</tr>
+<tr>
+<td><a href="#bloque-2-variables-y-funciones">2</a></td>
+<td>Variables y funciones</td>
+</tr>
+<tr>
+<td><a href="#bloque-3-el-dom">3</a></td>
+<td>El DOM</td>
+</tr>
+<tr>
+<td><a href="#bloque-4-eventos">4</a></td>
+<td>Eventos</td>
+</tr>
+<tr>
+<td>A</td>
+<td>Glosario</td>
+</tr>
+<tr>
+<td>B</td>
+<td>Mapa</td>
+</tr>
+<tr>
+<td>C</td>
+<td>Autoevaluación</td>
+</tr>
+</tbody>
+</table>
+<h2 id="bloque-1-que-es-javascript-y-como-se-incluye">Bloque 1. Qué es JavaScript y cómo se incluye<a class="headerlink" href="#bloque-1-que-es-javascript-y-como-se-incluye" title="Permanent link">&para;</a></h2>
+<h3 id="11-el-tercer-lenguaje-del-navegador">1.1 El tercer lenguaje del navegador<a class="headerlink" href="#11-el-tercer-lenguaje-del-navegador" title="Permanent link">&para;</a></h3>
+<p>El navegador entiende HTML, CSS y JavaScript. Los dos primeros no ejecutan nada. JavaScript sí: tiene variables, condiciones, bucles y funciones.</p>
+<div class="admonition definicion">
+<p class="admonition-title">JavaScript</p>
+<p>Lenguaje de programación que el navegador ejecuta. Sirve para reaccionar a lo que hace el usuario y para cambiar el documento que ya está en pantalla, sin recargar la página.</p>
+</div>
+<h3 id="12-un-archivo-externo-al-final-del-body">1.2 Un archivo externo, al final del body<a class="headerlink" href="#12-un-archivo-externo-al-final-del-body" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>  <span class="p">&lt;</span><span class="nt">h1</span> <span class="na">id</span><span class="o">=</span><span class="s">"titulo"</span><span class="p">&gt;</span>Hola<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>  <span class="p">&lt;</span><span class="nt">button</span> <span class="na">id</span><span class="o">=</span><span class="s">"boton"</span><span class="p">&gt;</span>Cambiar<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>  <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">"script.js"</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>El <code>script</code> al final asegura que el HTML ya está leído cuando el JS busca <code>#titulo</code>. Si lo pones en el <code>head</code> sin más, <code>getElementById</code> devuelve <code>null</code>.</p>
+<div class="admonition ojo">
+<p class="admonition-title">Ojo</p>
+<p><code>script.js</code> no es CSS: no va con <code>link rel="stylesheet"</code>. Va con <code>&lt;script src="…"&gt;</code>. Y se cierra.</p>
+</div>
+<div class="admonition comprueba">
+<p class="admonition-title">Comprueba</p>
+<ol>
+<li>¿JavaScript es un lenguaje de marcas?</li>
+<li>¿Por qué el script se pone al final del body?</li>
+<li>¿Qué pestaña de F12 enseña <code>console.log</code>?</li>
+</ol>
+</div>
+<h2 id="bloque-2-variables-y-funciones">Bloque 2. Variables y funciones<a class="headerlink" href="#bloque-2-variables-y-funciones" title="Permanent link">&para;</a></h2>
+<h3 id="21-let-y-const">2.1 let y const<a class="headerlink" href="#21-let-y-const" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kd">let</span><span class="w"> </span><span class="nx">contador</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">PI</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">3.14</span><span class="p">;</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="nx">contador</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">contador</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">1</span><span class="p">;</span>
+</code></pre></div>
+<p><code>let</code> se puede reasignar. <code>const</code> no. Los dos viven en el bloque donde los declaras. Olvida <code>var</code> en este módulo.</p>
+<p>Las cadenas van con comillas. Los números, sin ellas. <code>===</code> compara valor y tipo (<code>"5" === 5</code> es falso).</p>
+<h3 id="22-una-funcion-es-un-bloque-con-nombre">2.2 Una función es un bloque con nombre<a class="headerlink" href="#22-una-funcion-es-un-bloque-con-nombre" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">saludar</span><span class="p">(</span><span class="nx">nombre</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="s2">"Hola, "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">nombre</span><span class="p">;</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="p">}</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="kd">const</span><span class="w"> </span><span class="nx">saludar2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">nombre</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="s2">"Hola, "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">nombre</span><span class="p">;</span>
+</code></pre></div>
+<p>Las dos formas se usan. Empieza por <code>function</code> hasta que te salga natural.</p>
+<div class="admonition comprueba">
+<p class="admonition-title">Comprueba</p>
+<ol>
+<li>¿Puedes hacer <code>PI = 3</code> si <code>PI</code> es <code>const</code>?</li>
+<li>¿<code>"5" === 5</code>?</li>
+<li>¿Dónde vive un <code>let</code> declarado dentro de una función?</li>
+</ol>
+</div>
+<h2 id="bloque-3-el-dom">Bloque 3. El DOM<a class="headerlink" href="#bloque-3-el-dom" title="Permanent link">&para;</a></h2>
+<h3 id="31-el-html-como-arbol-de-objetos">3.1 El HTML como árbol de objetos<a class="headerlink" href="#31-el-html-como-arbol-de-objetos" title="Permanent link">&para;</a></h3>
+<p>Cuando el navegador lee el HTML, construye un árbol: el DOM. JavaScript habla con ese árbol, no con el archivo.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">titulo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">"titulo"</span><span class="p">);</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="nx">titulo</span><span class="p">.</span><span class="nx">textContent</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Cartelera de la semana"</span><span class="p">;</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="nx">titulo</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"teal"</span><span class="p">;</span>
+</code></pre></div>
+<p><code>getElementById</code> devuelve <strong>un</strong> elemento. <code>querySelector(".ficha")</code> devuelve el primero que cumple el selector CSS. <code>querySelectorAll</code> devuelve una lista.</p>
+<div class="admonition definicion">
+<p class="admonition-title">DOM</p>
+<p>Representación en árbol del documento HTML, viva en memoria. JavaScript la lee y la cambia: texto, atributos, clases, estilos.</p>
+</div>
+<p><code>textContent</code> pone texto plano. <code>innerHTML</code> interpreta marcas: no lo uses con texto que venga del usuario.</p>
+<h3 id="32-lo-que-cambias-es-el-documento-en-pantalla">3.2 Lo que cambias es el documento en pantalla<a class="headerlink" href="#32-lo-que-cambias-es-el-documento-en-pantalla" title="Permanent link">&para;</a></h3>
+<p>El archivo <code>index.html</code> no se reescribe. Si recargas, vuelves al HTML original. Eso es normal.</p>
+<div class="admonition predice">
+<p class="admonition-title">Predice</p>
+<p>Un <code>h1</code> con id titulo. El script hace <code>document.getElementById("Titulo")</code> (mayúscula). ¿Qué sale en consola si luego haces <code>.textContent = "Hola"</code>?</p>
+</div>
+<div class="admonition comprueba">
+<p class="admonition-title">Comprueba</p>
+<ol>
+<li>¿<code>getElementById</code> usa almohadilla?</li>
+<li>¿Cuál es más seguro con texto del usuario, <code>textContent</code> o <code>innerHTML</code>?</li>
+<li>Si el script corre antes de existir el h1, ¿qué devuelve <code>getElementById</code>?</li>
+</ol>
+</div>
+<h2 id="bloque-4-eventos">Bloque 4. Eventos<a class="headerlink" href="#bloque-4-eventos" title="Permanent link">&para;</a></h2>
+<h3 id="41-el-clic-no-es-magia-te-suscribes">4.1 El clic no es magia: te suscribes<a class="headerlink" href="#41-el-clic-no-es-magia-te-suscribes" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">boton</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">"boton"</span><span class="p">);</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">titulo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">"titulo"</span><span class="p">);</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="nx">boton</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">"click"</span><span class="p">,</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">  </span><span class="nx">titulo</span><span class="p">.</span><span class="nx">textContent</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Has pulsado"</span><span class="p">;</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="p">});</span>
+</code></pre></div>
+<p><code>addEventListener</code> recibe el nombre del evento (<code>click</code>, <code>input</code>, <code>submit</code>) y una función. Cada clic ejecuta esa función.</p>
+<div class="admonition definicion">
+<p class="admonition-title">Evento</p>
+<p>Suceso del documento o del usuario (clic, tecla, envío de formulario) al que JavaScript puede enganchar una función.</p>
+</div>
+<h3 id="42-un-ejemplo-que-se-prueba-entero">4.2 Un ejemplo que se prueba entero<a class="headerlink" href="#42-un-ejemplo-que-se-prueba-entero" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="p">&lt;</span><span class="nt">h1</span> <span class="na">id</span><span class="o">=</span><span class="s">"titulo"</span><span class="p">&gt;</span>Hola<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="p">&lt;</span><span class="nt">button</span> <span class="na">id</span><span class="o">=</span><span class="s">"boton"</span><span class="p">&gt;</span>Cambiar<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">"script.js"</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">"boton"</span><span class="p">).</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">"click"</span><span class="p">,</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">  </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">"titulo"</span><span class="p">).</span><span class="nx">textContent</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Hola, JavaScript"</span><span class="p">;</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="p">});</span>
+</code></pre></div>
+<p>Abre la página, pulsa, mira el título. En Consola no debería haber errores en rojo.</p>
+<div class="admonition ojo">
+<p class="admonition-title">Ojo</p>
+<p><code>onclick="…"</code> en el HTML mezcla marcado y programa. En este módulo, los eventos van en el <code>.js</code>.</p>
+</div>
+<div class="admonition comprueba">
+<p class="admonition-title">Comprueba</p>
+<ol>
+<li>¿Qué dos argumentos recibe <code>addEventListener</code>?</li>
+<li>¿Hace falta recargar para ver el cambio de <code>textContent</code> después de un clic?</li>
+<li>¿Dónde escribirías el <code>addEventListener</code>, en el HTML o en el JS?</li>
+</ol>
+</div>
+<h2 id="anexo-a-glosario">Anexo A. Glosario<a class="headerlink" href="#anexo-a-glosario" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Término</th>
+<th>Significado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>JavaScript</td>
+<td>Lenguaje de programación del navegador</td>
+</tr>
+<tr>
+<td>DOM</td>
+<td>Árbol en memoria del HTML</td>
+</tr>
+<tr>
+<td><code>let</code> / <code>const</code></td>
+<td>Declaración de datos; <code>const</code> no se reasigna</td>
+</tr>
+<tr>
+<td><code>getElementById</code></td>
+<td>Busca un elemento por su id, sin almohadilla</td>
+</tr>
+<tr>
+<td><code>textContent</code></td>
+<td>Texto plano de un elemento</td>
+</tr>
+<tr>
+<td>Evento</td>
+<td>Clic, tecla, envío…</td>
+</tr>
+<tr>
+<td><code>addEventListener</code></td>
+<td>Engancha una función a un evento</td>
+</tr>
+</tbody>
+</table>
+<h2 id="anexo-b-mapa">Anexo B. Mapa<a class="headerlink" href="#anexo-b-mapa" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>HTML (estructura) + CSS (aspecto) + JS (comportamiento)
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>  script src al final del body
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>  let / const / function
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>  document.getElementById / querySelector
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>  textContent, style
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>  addEventListener("click", …)
+</code></pre></div>
+<h2 id="anexo-c-autoevaluacion">Anexo C. Autoevaluación<a class="headerlink" href="#anexo-c-autoevaluacion" title="Permanent link">&para;</a></h2>
+<h3 id="preguntas-cortas">Preguntas cortas<a class="headerlink" href="#preguntas-cortas" title="Permanent link">&para;</a></h3>
+<ol>
+<li>¿Por qué JavaScript no es un lenguaje de marcas?</li>
+<li>Escribe el <code>script</code> para enlazar <code>app.js</code> al final del body.</li>
+<li>Diferencia <code>textContent</code> e <code>innerHTML</code>.</li>
+<li>Escribe el <code>addEventListener</code> de un botón que ponga «Ok» en un párrafo.</li>
+</ol>
+<h3 id="tipo-test">Tipo test<a class="headerlink" href="#tipo-test" title="Permanent link">&para;</a></h3>
+<ol>
+<li><code>getElementById("titulo")</code> busca:<ul>
+<li>a) <code>#titulo</code> en CSS</li>
+<li>b) El id <code>titulo</code>, sin almohadilla</li>
+<li>c) Todas las clases <code>titulo</code></li>
+<li>d) El tag <code>titulo</code></li>
+</ul>
+</li>
+<li><code>const n = 1; n = 2;</code>:<ul>
+<li>a) Vale, n pasa a 2</li>
+<li>b) Error: const no se reasigna</li>
+<li>c) Vale solo dentro de una función</li>
+<li>d) Vale si n era un string</li>
+</ul>
+</li>
+<li>El script en el <code>head</code> sin esperar al HTML:<ul>
+<li>a) Encuentra igual los id</li>
+<li>b) Puede devolver <code>null</code></li>
+<li>c) Convierte el HTML en DOM dos veces</li>
+<li>d) Ignora el CSS</li>
+</ul>
+</li>
+</ol>
+<h3 id="razona">Razona<a class="headerlink" href="#razona" title="Permanent link">&para;</a></h3>
+<p>Un compañero pone <code>onclick="cambiar()"</code> en el botón y la función en un <code>script</code> del <code>head</code>. El botón «no hace nada». ¿Por qué y cómo lo harías tú?</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Pie" >
+        
+          
+          <a href="UT4-dosier.html" class="md-footer__link md-footer__link--prev" aria-label="Anterior: UT4. Layout responsive">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              <div class="md-ellipsis">
+                UT4. Layout responsive
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="UT6-dosier.html" class="md-footer__link md-footer__link--next" aria-label="Siguiente: UT6. XML y JSON">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Siguiente
+              </span>
+              <div class="md-ellipsis">
+                UT6. XML y JSON
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Dustin Randel de Lara García, Sant Josep Obrer. Material docente del módulo 0373.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.top", "navigation.footer", "navigation.indexes", "toc.follow", "search.highlight", "search.suggest", "content.code.copy", "content.code.annotate", "content.tabs.link"], "search": "assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.a5f9d56c.min.js"></script>
+      
+    
+  </body>
+</html>
