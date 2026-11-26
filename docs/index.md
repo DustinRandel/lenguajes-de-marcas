@@ -13,6 +13,7 @@ Apuntes del módulo 0373, para 1.º de DAW, DAM y ASIR. Cada unidad de trabajo (
 | [UT3. Hojas de estilo CSS](UT3-dosier.md) | Selectores, cascada y especificidad, colores y unidades, texto, fondos, enlaces, modelo de caja y display |
 | [UT4. Layout responsive](UT4-dosier.md) | Flexbox, Grid y media queries: un HTML que se reorganiza según el ancho |
 | [UT5. JavaScript en el navegador](UT5-dosier.md) | Script, DOM, textContent y eventos de clic |
+| [UT6. XML y JSON](UT6-dosier.md) | Datos en árbol: XML bien formado y JSON |
 
 Cada dosier se puede descargar también en PDF desde Classroom.
 
