@@ -9,6 +9,7 @@ Apuntes del módulo 0373, para 1.º de DAW, DAM y ASIR. Cada unidad de trabajo (
 | UT | Contenido |
 |---|---|
 | [UT1. Introducción a Lenguajes de Marcas](UT1-dosier.md) | Qué es un lenguaje de marcas, historia, lenguajes habituales y primer documento HTML |
+| [UT2. El documento HTML](UT2-dosier.md) | Esqueleto HTML5, etiquetas, listas, enlaces, imágenes y tablas de datos |
 | [UT3. Hojas de estilo CSS](UT3-dosier.md) | Selectores, cascada y especificidad, colores y unidades, texto, fondos, enlaces, modelo de caja y display |
 | [UT4. Layout responsive](UT4-dosier.md) | Flexbox, Grid y media queries: un HTML que se reorganiza según el ancho |
 

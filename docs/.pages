@@ -1,6 +1,7 @@
 nav:
     - Inicio: index.md
     - UT1. Introducción a Lenguajes de Marcas: UT1-dosier.md
+    - UT2. El documento HTML: UT2-dosier.md
     - UT3. Hojas de estilo CSS: UT3-dosier.md
     - UT4. Layout responsive: UT4-dosier.md
 
